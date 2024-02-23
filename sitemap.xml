@@ -47,15 +47,6 @@
   </url>
   
   <url>
-    <loc>https://xingluoxiqiao.github.io/life/games/index.html</loc>
-    
-    <lastmod>2024-01-24</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://xingluoxiqiao.github.io/life/movies/index.html</loc>
     
     <lastmod>2024-01-24</lastmod>
@@ -74,7 +65,25 @@
   </url>
   
   <url>
+    <loc>https://xingluoxiqiao.github.io/life/games/index.html</loc>
+    
+    <lastmod>2024-01-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://xingluoxiqiao.github.io/categories/index.html</loc>
+    
+    <lastmod>2024-01-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://xingluoxiqiao.github.io/box/animation/index.html</loc>
     
     <lastmod>2024-01-24</lastmod>
     
@@ -101,9 +110,9 @@
   </url>
   
   <url>
-    <loc>https://xingluoxiqiao.github.io/box/animation/index.html</loc>
+    <loc>https://xingluoxiqiao.github.io/posts/8601bab2.html</loc>
     
-    <lastmod>2024-01-24</lastmod>
+    <lastmod>2023-10-23</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -137,9 +146,72 @@
   </url>
   
   <url>
+    <loc>https://xingluoxiqiao.github.io/posts/adcb768c.html</loc>
+    
+    <lastmod>2023-10-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://xingluoxiqiao.github.io/posts/28239a8d.html</loc>
     
     <lastmod>2023-10-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://xingluoxiqiao.github.io/posts/8e40d0ad.html</loc>
+    
+    <lastmod>2023-09-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://xingluoxiqiao.github.io/post-img/%E8%AE%A1%E5%88%92.html</loc>
+    
+    <lastmod>2023-09-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://xingluoxiqiao.github.io/posts/5729df21.html</loc>
+    
+    <lastmod>2023-09-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://xingluoxiqiao.github.io/posts/23a3bd72.html</loc>
+    
+    <lastmod>2023-09-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://xingluoxiqiao.github.io/posts/d4cf1cb8.html</loc>
+    
+    <lastmod>2023-09-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://xingluoxiqiao.github.io/posts/6ae8bba9.html</loc>
+    
+    <lastmod>2023-09-11</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -164,7 +236,7 @@
   </url>
   
   <url>
-    <loc>https://xingluoxiqiao.github.io/posts/6b129314.html</loc>
+    <loc>https://xingluoxiqiao.github.io/posts/abcb1f8f.html</loc>
     
     <lastmod>2023-08-20</lastmod>
     
@@ -173,7 +245,7 @@
   </url>
   
   <url>
-    <loc>https://xingluoxiqiao.github.io/posts/abcb1f8f.html</loc>
+    <loc>https://xingluoxiqiao.github.io/posts/6b129314.html</loc>
     
     <lastmod>2023-08-20</lastmod>
     
@@ -185,6 +257,15 @@
     <loc>https://xingluoxiqiao.github.io/posts/561bfca6.html</loc>
     
     <lastmod>2023-08-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://xingluoxiqiao.github.io/posts/7af799fd.html</loc>
+    
+    <lastmod>2023-08-12</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -220,7 +301,7 @@
 
   <url>
     <loc>https://xingluoxiqiao.github.io/</loc>
-    <lastmod>2024-02-18</lastmod>
+    <lastmod>2024-02-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -228,42 +309,49 @@
   
   <url>
     <loc>https://xingluoxiqiao.github.io/tags/java/</loc>
-    <lastmod>2024-02-18</lastmod>
+    <lastmod>2024-02-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://xingluoxiqiao.github.io/tags/Markdown/</loc>
-    <lastmod>2024-02-18</lastmod>
+    <lastmod>2024-02-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://xingluoxiqiao.github.io/tags/%E5%A4%96%E6%8C%82%E6%A0%87%E7%AD%BE/</loc>
-    <lastmod>2024-02-18</lastmod>
+    <lastmod>2024-02-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://xingluoxiqiao.github.io/tags/mysql/</loc>
-    <lastmod>2024-02-18</lastmod>
+    <lastmod>2024-02-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://xingluoxiqiao.github.io/tags/redis/</loc>
-    <lastmod>2024-02-18</lastmod>
+    <lastmod>2024-02-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://xingluoxiqiao.github.io/tags/JVM/</loc>
-    <lastmod>2024-02-18</lastmod>
+    <lastmod>2024-02-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://xingluoxiqiao.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/</loc>
+    <lastmod>2024-02-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -272,35 +360,42 @@
   
   <url>
     <loc>https://xingluoxiqiao.github.io/categories/java/</loc>
-    <lastmod>2024-02-18</lastmod>
+    <lastmod>2024-02-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://xingluoxiqiao.github.io/categories/%E6%BC%94%E7%A4%BA/</loc>
-    <lastmod>2024-02-18</lastmod>
+    <lastmod>2024-02-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://xingluoxiqiao.github.io/categories/mysql/</loc>
-    <lastmod>2024-02-18</lastmod>
+    <lastmod>2024-02-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://xingluoxiqiao.github.io/categories/redis/</loc>
-    <lastmod>2024-02-18</lastmod>
+    <lastmod>2024-02-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://xingluoxiqiao.github.io/categories/JVM/</loc>
-    <lastmod>2024-02-18</lastmod>
+    <lastmod>2024-02-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://xingluoxiqiao.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/</loc>
+    <lastmod>2024-02-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>

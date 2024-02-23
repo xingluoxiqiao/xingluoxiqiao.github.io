@@ -9396,7 +9396,11 @@ hr:before {
   scale: 1.05;
   transition: all 0.3s ease-in-out;
 }
-
+/* 翻页按钮居中 */
+#pagination {
+  width: 100%;
+  margin: auto;
+}
 .search-dialog {
   position: fixed;
   top: 10%;

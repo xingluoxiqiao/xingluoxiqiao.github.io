@@ -2780,7 +2780,7 @@ figure.highlight pre .javascript .function {
   width: 20px;
   clip-path: polygon(0 0, 100% 0, 50% 100%);
 }
-@media screen and (min-width: 1069px) {
+@media screen and (min-width: 2049px) {
   .recent-posts .recent-post-item {
     width: 32.3%;
     margin: 0px 1% 20px 0px;
@@ -2798,7 +2798,7 @@ figure.highlight pre .javascript .function {
     -webkit-line-clamp: 2;
   }
 }
-@media screen and (min-width: 572px) and (max-width: 1068px) {
+@media screen and (min-width: 572px) and (max-width: 2048px) {
   .recent-posts .recent-post-item {
     width: 47%;
     margin: 0px 3% 20px 0px;
@@ -5112,14 +5112,14 @@ mjx-container[display],
 }
 @media screen and (max-width: 800px) {
   #web_bg {
-    background: var(--mobileday-bg);
+    background: var(https://pic.imgdb.cn/item/64ab91601ddac507cc2609aa.jpg);
     background-attachment: local !important;
     background-position: center !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
   }
   [data-theme="dark"] #web_bg {
-    background: var(--mobilenight-bg);
+    background: var(https://pic.imgdb.cn/item/65b37749871b83018a346195.jpg);
     background-attachment: local !important;
     background-position: center !important;
     background-size: cover !important;

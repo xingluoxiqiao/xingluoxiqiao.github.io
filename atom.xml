@@ -3,11 +3,11 @@
   <title>星落溪桥</title>
   
   
-  <link href="https://xingluoxiqiao.github.io/atom.xml" rel="self"/>
+  <link href="https://xlxq.fun/atom.xml" rel="self"/>
   
-  <link href="https://xingluoxiqiao.github.io/"/>
+  <link href="https://xlxq.fun/"/>
   <updated>2024-01-13T11:18:02.000Z</updated>
-  <id>https://xingluoxiqiao.github.io/</id>
+  <id>https://xlxq.fun/</id>
   
   <author>
     <name>星落溪桥</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>RocketMQ入门</title>
-    <link href="https://xingluoxiqiao.github.io/posts/badb3e06.html"/>
-    <id>https://xingluoxiqiao.github.io/posts/badb3e06.html</id>
+    <link href="https://xlxq.fun/posts/badb3e06.html"/>
+    <id>https://xlxq.fun/posts/badb3e06.html</id>
     <published>2024-01-13T11:18:02.000Z</published>
     <updated>2024-01-13T11:18:02.000Z</updated>
     
@@ -30,17 +30,17 @@
     
     
     
-    <category term="中间件" scheme="https://xingluoxiqiao.github.io/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/"/>
+    <category term="中间件" scheme="https://xlxq.fun/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/"/>
     
     
-    <category term="消息队列，RocketMQ" scheme="https://xingluoxiqiao.github.io/tags/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%EF%BC%8CRocketMQ/"/>
+    <category term="消息队列，RocketMQ" scheme="https://xlxq.fun/tags/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%EF%BC%8CRocketMQ/"/>
     
   </entry>
   
   <entry>
     <title>消息队列概述</title>
-    <link href="https://xingluoxiqiao.github.io/posts/487a8a3.html"/>
-    <id>https://xingluoxiqiao.github.io/posts/487a8a3.html</id>
+    <link href="https://xlxq.fun/posts/487a8a3.html"/>
+    <id>https://xlxq.fun/posts/487a8a3.html</id>
     <published>2024-01-12T11:18:02.000Z</published>
     <updated>2024-01-12T11:18:02.000Z</updated>
     
@@ -51,17 +51,38 @@
     
     
     
-    <category term="中间件" scheme="https://xingluoxiqiao.github.io/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/"/>
+    <category term="中间件" scheme="https://xlxq.fun/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/"/>
     
     
-    <category term="消息队列" scheme="https://xingluoxiqiao.github.io/tags/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/"/>
+    <category term="消息队列" scheme="https://xlxq.fun/tags/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>单例模式</title>
+    <link href="https://xlxq.fun/posts/f1601c3e.html"/>
+    <id>https://xlxq.fun/posts/f1601c3e.html</id>
+    <published>2023-10-15T12:18:02.000Z</published>
+    <updated>2023-10-15T12:18:02.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1>懒汉式</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Singleton</span> &#123;  </span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> Singleton singleton;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">private</span> <span class="title function_">Singleton</span><span class="params">()</span>&#123;&#125;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title function_">getInstance</span><span class="params">()</span>&#123;  </span><br><span class="line">        <span class="keyword">if</span>(singleton==<span class="literal">null</span>)&#123;  </span><br><span class="line">            singleton=<span class="keyword">new</span> <span class="title class_">Singleton</span>();  </span><br><span class="line">        &#125;  </span><br><span class="line">        <span class="keyword">return</span> singleton;  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h1>饿汉式</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Singleton2</span> &#123;  </span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> Singleton2 singleton2=<span class="keyword">new</span> <span class="title class_">Singleton2</span>();  </span><br><span class="line">    <span class="keyword">private</span> <span class="title function_">Singleton2</span><span class="params">()</span>&#123;&#125;  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> Singleton2 <span class="title function_">getInstance</span><span class="params">()</span>&#123;  </span><br><span class="line">        <span class="keyword">return</span> singleton2;  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h1>双重校验锁</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Singleton3</span> &#123;  </span><br><span class="line"><span class="comment">//    创建一个对象，在JVM中会经过三步：  </span></span><br><span class="line"><span class="comment">//          （1）为singleton分配内存空间  </span></span><br><span class="line"><span class="comment">//          （2）初始化singleton对象  </span></span><br><span class="line"><span class="comment">//          （3）将singleton指向分配好的内存空间  </span></span><br><span class="line"><span class="comment">//在这个过程中2、3步可能发生指令重排序，因此需要使用volatile来修饰  </span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">volatile</span> Singleton3 singleton3;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">private</span> <span class="title function_">Singleton3</span><span class="params">()</span>&#123;&#125;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> Singleton3 <span class="title function_">getInstance</span><span class="params">()</span> &#123; </span><br><span class="line">    <span class="comment">// 线程A和线程B同时看到singleton = null，如果不为null，则直接返回singleton   </span></span><br><span class="line">        <span class="keyword">if</span> (singleton3 == <span class="literal">null</span>) &#123;  </span><br><span class="line">        <span class="comment">// 线程A或线程B获得该锁进行初始化  </span></span><br><span class="line">            <span class="keyword">synchronized</span>(Singleton3.class) &#123; </span><br><span class="line">            <span class="comment">// 其中一个线程进入该分支，另外一个线程则不会进入该分支</span></span><br><span class="line">                <span class="keyword">if</span> (singleton3 == <span class="literal">null</span>) &#123;   </span><br><span class="line">                    singleton3 = <span class="keyword">new</span> <span class="title class_">Singleton3</span>();  </span><br><span class="line">                &#125;  </span><br><span class="line">            &#125;  </span><br><span class="line">        &#125;  </span><br><span class="line">        <span class="keyword">return</span> singleton3;  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h1>枚举</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">enum</span> <span class="title class_">Singleton4</span> &#123;  </span><br><span class="line">    INSTANCE;  </span><br><span class="line">    Singleton4() &#123; System.out.println(<span class="string">&quot;枚举创建对象了&quot;</span>); &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h1>单例模式的线程安全问题</h1><p>在一般的单例模式实现中，如果没有特殊处理，是不具备线程安全性的。主要的问题在于多线程环境下可能会导致<strong>多个线程同时访问到未初始化完成的实例或者同时执行实例的创建操作</strong>，从而造成实例的不一致性或错误。<br>上述四种单例模式的实现中，饿汉式、双重校验锁、枚举都可以保证单例的线程安全</p><ol><li>饿汉式在类加载时就创建了实例，因此不会存在多线程环境下的竞争问题。但它可能会提前占用资源，因为无论是否使用，实例都会被创建</li><li>双重校验锁使用<code>volatile</code>关键字确保多线程环境下对<code>instance</code>变量的可见性，而双重检查锁定通过在锁内外都进行一次判空来提高性能</li><li>枚举类型在Java中天生就是单例的，且线程安全</li></ol>]]></content>
+    
+    
+    <summary type="html">java基础知识</summary>
+    
+    
+    
+    <category term="java" scheme="https://xlxq.fun/categories/java/"/>
+    
+    
+    <category term="java，设计模式" scheme="https://xlxq.fun/tags/java%EF%BC%8C%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
   </entry>
   
   <entry>
     <title>Redis基础</title>
-    <link href="https://xingluoxiqiao.github.io/posts/fe29e710.html"/>
-    <id>https://xingluoxiqiao.github.io/posts/fe29e710.html</id>
+    <link href="https://xlxq.fun/posts/fe29e710.html"/>
+    <id>https://xlxq.fun/posts/fe29e710.html</id>
     <published>2023-09-18T10:19:03.000Z</published>
     <updated>2023-09-23T14:00:00.000Z</updated>
     
@@ -72,17 +93,38 @@
     
     
     
-    <category term="redis" scheme="https://xingluoxiqiao.github.io/categories/redis/"/>
+    <category term="redis" scheme="https://xlxq.fun/categories/redis/"/>
     
     
-    <category term="redis" scheme="https://xingluoxiqiao.github.io/tags/redis/"/>
+    <category term="redis" scheme="https://xlxq.fun/tags/redis/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ThreadLocal</title>
+    <link href="https://xlxq.fun/posts/151f44ae.html"/>
+    <id>https://xlxq.fun/posts/151f44ae.html</id>
+    <published>2023-09-15T12:18:02.000Z</published>
+    <updated>2023-09-15T12:18:02.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1>什么是线程安全</h1><p>线程安全（Thread Safety）是指在多线程环境下，一个程序或者代码段能够在<strong>并发</strong>执行的情况下正确地执行，不会产生意外的结果。确保线程安全是多线程编程中一个非常重要的概念，因为在多线程环境下，多个线程可能同时访问和修改共享的数据，如果不进行适当的同步和保护，可能导致数据不一致、不确定的行为或者程序崩溃。</p><h2 id="线程安全的关键点">线程安全的关键点</h2><ol><li><strong>原子性（Atomicity）：</strong> 原子操作是指一个操作是不可中断的，要么全部执行成功，要么全部不执行，不会出现部分执行的情况。在多线程环境下，确保某个操作是原子的可以避免竞态条件（Race Condition）。</li><li><strong>可见性（Visibility）：</strong> 当一个线程对共享变量进行了修改，其他线程应该能够立即看到这个修改。Java中使用<code>volatile</code>关键字可以保证变量的可见性。</li><li><strong>有序性（Ordering）：</strong> 确保指令执行的顺序按照程序的顺序来执行。在Java中，通过synchronized关键字、Lock接口等机制可以保证代码块的有序性。</li><li><strong>不变性（Immutability）：</strong> 使用不可变对象或者通过其他手段确保对象在多线程环境中不能被修改，从而避免竞态条件。</li></ol><h2 id="实现线程安全">实现线程安全</h2><ol><li><strong>加锁机制：</strong> 使用<code>synchronized</code>关键字或者<code>ReentrantLock</code>等锁机制来确保在同一时刻只有一个线程能够访问共享资源，从而避免竞态条件。</li><li><strong>原子类：</strong> Java提供了一些原子类（如<code>AtomicInteger</code>、<code>AtomicLong</code>等），这些类的操作是原子的，不需要额外的同步。</li><li><strong>线程局部变量（Thread-Local Variables）：</strong> 使用<code>ThreadLocal</code>可以为每个线程提供独立的变量副本，避免了共享变量的修改冲突。</li><li><strong>不可变对象：</strong> 创建不可变对象，确保对象一旦被创建就不能被修改，从而避免多线程环境中的数据竞争。</li><li><strong>使用并发集合：</strong> Java提供了一些并发集合类（如<code>ConcurrentHashMap</code>、<code>CopyOnWriteArrayList</code>等），它们内部实现了线程安全机制，可以在多线程环境下安全地使用。</li></ol><h1>ThreadLocal</h1><ol><li><code>ThreadLocal</code> 是 Java 中的一个特殊类，用于在多线程环境中保持<strong>变量的线程本地副本</strong>。它并不直接保证线程安全，而是通过为每个线程提供独立的变量副本来避免线程间的竞争和共享。</li><li><code>ThreadLocal</code> 使用一个特殊的数据结构来维护每个线程的变量副本，这样每个线程都可以独立地修改自己的副本而不会影响其他线程的副本。这种方式在一些场景下非常有用，比如在线程池中处理任务时，每个任务都可以独立地访问和修改自己的数据，而不用担心线程安全问题。</li><li>使用<code>ThreadLocal</code>有两个作用：<ul><li>线程内资源全局共享</li><li>线程间资源互相隔离</li></ul></li></ol><h3 id="用法示例">用法示例</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">常用方法：get(),set(object),remove()</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ThreadLocalExample</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> ThreadLocal&lt;Integer&gt; threadLocal = <span class="keyword">new</span> <span class="title class_">ThreadLocal</span>&lt;&gt;();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="comment">// 在主线程设置 ThreadLocal 变量</span></span><br><span class="line">        threadLocal.set(<span class="number">42</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 启动两个新线程，它们会访问各自独立的 ThreadLocal 变量副本</span></span><br><span class="line">        <span class="type">Thread</span> <span class="variable">thread1</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Thread</span>(() -&gt; &#123;</span><br><span class="line">            threadLocal.set(<span class="number">100</span>);</span><br><span class="line">            System.out.println(<span class="string">&quot;Thread 1: &quot;</span> + threadLocal.get());</span><br><span class="line">        &#125;);</span><br><span class="line"></span><br><span class="line">        <span class="type">Thread</span> <span class="variable">thread2</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Thread</span>(() -&gt; &#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;Thread 2: &quot;</span> + threadLocal.get());</span><br><span class="line">        &#125;);</span><br><span class="line"></span><br><span class="line">        thread1.start();</span><br><span class="line">        thread2.start();</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 在主线程获取 ThreadLocal 变量</span></span><br><span class="line">        System.out.println(<span class="string">&quot;Main Thread: &quot;</span> + threadLocal.get());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//输出</span></span><br><span class="line">Thread <span class="number">1</span>: <span class="number">100</span></span><br><span class="line">Thread <span class="number">2</span>: <span class="literal">null</span></span><br><span class="line">Main Thread: <span class="number">42</span></span><br></pre></td></tr></table></figure><h2 id="原理">原理</h2><p>一个ThreadLocal内部维护了一个ThreadLocalMap，类似于HashMap，当在某个线程中调用其set方法时，会将该线程id作为键，传入参数作为值存入其中；<br>因为map的键必须唯一，所以每个线程只有一个存储的空间，如果需要存储多个变量，可以采用如下办法：</p><ol><li>创建一个包含多个变量的类，然后将这个类的实例存储在一个ThreadLocal中</li><li>使用多个ThreadLocal，每个ThreadLocal保存不同的值</li></ol><h2 id="使用ThreadLocal注意事项">使用ThreadLocal注意事项</h2><p>使用<code>ThreadLocal</code>时，需要注意一些问题以确保正确的使用和避免潜在的错误。下面是一些建议和注意事项：</p><ol><li><strong>ThreadLocal的生命周期：</strong> <strong>ThreadLocal存储的数据与线程的生命周期相关联</strong>。如果线程池中的线程被重用，可能会导致上一次的<code>ThreadLocal</code>数据残留。确保<strong>在线程池中使用</strong><code>ThreadLocal</code>时，在任务执行结束后及时清理相关的<code>ThreadLocal</code>数据。</li><li><strong>手动清理ThreadLocal：</strong> 在使用完<code>ThreadLocal</code>后，尽量手动调用<code>remove</code>方法清理<code>ThreadLocal</code>中的数据。可以使用<code>try-finally</code>块确保在任何情况下都能正确清理。</li></ol><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span> &#123;  使用ThreadLocal &#125;</span><br><span class="line"><span class="keyword">finally</span> &#123;   threadLocalVariable.remove(); &#125;</span><br></pre></td></tr></table></figure><ol start="3"><li><strong>避免内存泄漏：</strong> 由于<code>ThreadLocal</code>的生命周期与线程相绑定，如果在应用中存在很多线程，并且频繁使用<code>ThreadLocal</code>，可能导致内存泄漏。确保使用完<code>ThreadLocal</code>后及时清理，以免过多的<code>ThreadLocal</code>实例占用内存。</li><li><strong>适当使用初始化值：</strong> 可以通过<code>ThreadLocal</code>的<code>withInitial</code>方法在获取线程本地变量时设置默认值。这有助于避免在未设置值时返回<code>null</code>等不可预测的情况。</li></ol><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> ThreadLocal&lt;String&gt; threadLocalVariable = </span><br><span class="line">ThreadLocal.withInitial(() -&gt; <span class="string">&quot;Default&quot;</span>);</span><br></pre></td></tr></table></figure><ol start="5"><li><strong>不要滥用ThreadLocal：</strong> <code>ThreadLocal</code>是一种方便的工具，但滥用可能导致代码不易理解，尤其是在大规模的并发环境中。在适当的情况下使用，不要过度依赖它。</li><li><strong>清理资源：</strong> 如果<code>ThreadLocal</code>中存储的是一些需要手动释放的资源，确保在不再需要这些资源时进行释放，以防资源泄漏。</li><li><strong>考虑使用InheritableThreadLocal：</strong> 如果线程池中的任务可能会创建子任务，并且需要共享父任务的<code>ThreadLocal</code>数据，可以考虑使用<code>InheritableThreadLocal</code>。它会使子线程继承父线程的<code>ThreadLocal</code>值。</li></ol><h2 id="阿里开源TTL">阿里开源TTL</h2><ol><li>TTL（Transmittable Thread-Local）是阿里巴巴开源的一个Java工具库，用于解决跨线程传递<code>ThreadLocal</code>值的问题。在Java多线程编程中，<code>ThreadLocal</code>通常用于保存线程私有的变量，但当线程池或异步任务池中的线程复用时，<code>ThreadLocal</code>的值无法自动传递，可能导致问题。</li><li>TTL提供了一种解决方案，通过TTL可以在父线程中设置<code>ThreadLocal</code>的值，然后在子线程中获取到这个值。这样，即使线程被线程池复用，<code>ThreadLocal</code>的值也能够正确地传递。</li><li>以下是TTL的一些特点和使用方法：<ul><li><strong>支持父子线程传递：</strong> TTL通过修改<code>ThreadLocal</code>的底层实现，支持在父线程中设置<code>ThreadLocal</code>的值，然后在子线程中获取到这个值。</li><li><strong>透明：</strong> 使用TTL时，对原有的<code>ThreadLocal</code>代码基本没有入侵，通过TTL提供的API可以在需要的地方进行修饰。</li><li><strong>无内存泄漏风险：</strong> TTL会在子线程中自动清理不再需要的<code>ThreadLocal</code>值，避免了传统<code>ThreadLocal</code>可能存在的内存泄漏问题。</li><li><strong>与线程池集成：</strong> TTL对一些常见的线程池（如ThreadPoolExecutor）进行了集成，可以方便地与线程池搭配使用。</li><li><strong>兼容性：</strong> TTL兼容Java原生的<code>ThreadLocal</code> API，使用起来相对简便。</li></ul></li></ol>]]></content>
+    
+    
+    <summary type="html">java基础知识</summary>
+    
+    
+    
+    <category term="java" scheme="https://xlxq.fun/categories/java/"/>
+    
+    
+    <category term="java" scheme="https://xlxq.fun/tags/java/"/>
     
   </entry>
   
   <entry>
     <title>多线程</title>
-    <link href="https://xingluoxiqiao.github.io/posts/5729df21.html"/>
-    <id>https://xingluoxiqiao.github.io/posts/5729df21.html</id>
+    <link href="https://xlxq.fun/posts/5729df21.html"/>
+    <id>https://xlxq.fun/posts/5729df21.html</id>
     <published>2023-09-15T12:18:02.000Z</published>
     <updated>2023-09-15T12:18:02.000Z</updated>
     
@@ -93,17 +135,17 @@
     
     
     
-    <category term="java" scheme="https://xingluoxiqiao.github.io/categories/java/"/>
+    <category term="java" scheme="https://xlxq.fun/categories/java/"/>
     
     
-    <category term="java" scheme="https://xingluoxiqiao.github.io/tags/java/"/>
+    <category term="java" scheme="https://xlxq.fun/tags/java/"/>
     
   </entry>
   
   <entry>
     <title>异常</title>
-    <link href="https://xingluoxiqiao.github.io/posts/23a3bd72.html"/>
-    <id>https://xingluoxiqiao.github.io/posts/23a3bd72.html</id>
+    <link href="https://xlxq.fun/posts/23a3bd72.html"/>
+    <id>https://xlxq.fun/posts/23a3bd72.html</id>
     <published>2023-09-13T11:18:02.000Z</published>
     <updated>2023-09-13T11:18:02.000Z</updated>
     
@@ -114,17 +156,17 @@
     
     
     
-    <category term="java" scheme="https://xingluoxiqiao.github.io/categories/java/"/>
+    <category term="java" scheme="https://xlxq.fun/categories/java/"/>
     
     
-    <category term="java" scheme="https://xingluoxiqiao.github.io/tags/java/"/>
+    <category term="java" scheme="https://xlxq.fun/tags/java/"/>
     
   </entry>
   
   <entry>
     <title>文件</title>
-    <link href="https://xingluoxiqiao.github.io/posts/d4cf1cb8.html"/>
-    <id>https://xingluoxiqiao.github.io/posts/d4cf1cb8.html</id>
+    <link href="https://xlxq.fun/posts/d4cf1cb8.html"/>
+    <id>https://xlxq.fun/posts/d4cf1cb8.html</id>
     <published>2023-09-13T11:18:02.000Z</published>
     <updated>2023-09-13T11:18:02.000Z</updated>
     
@@ -135,17 +177,17 @@
     
     
     
-    <category term="java" scheme="https://xingluoxiqiao.github.io/categories/java/"/>
+    <category term="java" scheme="https://xlxq.fun/categories/java/"/>
     
     
-    <category term="java" scheme="https://xingluoxiqiao.github.io/tags/java/"/>
+    <category term="java" scheme="https://xlxq.fun/tags/java/"/>
     
   </entry>
   
   <entry>
     <title>Stream流和方法引用</title>
-    <link href="https://xingluoxiqiao.github.io/posts/6ae8bba9.html"/>
-    <id>https://xingluoxiqiao.github.io/posts/6ae8bba9.html</id>
+    <link href="https://xlxq.fun/posts/6ae8bba9.html"/>
+    <id>https://xlxq.fun/posts/6ae8bba9.html</id>
     <published>2023-09-11T11:18:02.000Z</published>
     <updated>2023-09-11T11:18:02.000Z</updated>
     
@@ -156,17 +198,17 @@
     
     
     
-    <category term="java" scheme="https://xingluoxiqiao.github.io/categories/java/"/>
+    <category term="java" scheme="https://xlxq.fun/categories/java/"/>
     
     
-    <category term="java" scheme="https://xingluoxiqiao.github.io/tags/java/"/>
+    <category term="java" scheme="https://xlxq.fun/tags/java/"/>
     
   </entry>
   
   <entry>
     <title>垃圾回收</title>
-    <link href="https://xingluoxiqiao.github.io/posts/72f47432.html"/>
-    <id>https://xingluoxiqiao.github.io/posts/72f47432.html</id>
+    <link href="https://xlxq.fun/posts/72f47432.html"/>
+    <id>https://xlxq.fun/posts/72f47432.html</id>
     <published>2023-09-11T11:18:02.000Z</published>
     <updated>2023-09-11T11:18:02.000Z</updated>
     
@@ -177,17 +219,17 @@
     
     
     
-    <category term="JVM" scheme="https://xingluoxiqiao.github.io/categories/JVM/"/>
+    <category term="JVM" scheme="https://xlxq.fun/categories/JVM/"/>
     
     
-    <category term="JVM" scheme="https://xingluoxiqiao.github.io/tags/JVM/"/>
+    <category term="JVM，java" scheme="https://xlxq.fun/tags/JVM%EF%BC%8Cjava/"/>
     
   </entry>
   
   <entry>
     <title>mysql基础</title>
-    <link href="https://xingluoxiqiao.github.io/posts/8e40d0ad.html"/>
-    <id>https://xingluoxiqiao.github.io/posts/8e40d0ad.html</id>
+    <link href="https://xlxq.fun/posts/8e40d0ad.html"/>
+    <id>https://xlxq.fun/posts/8e40d0ad.html</id>
     <published>2023-09-09T10:19:03.000Z</published>
     <updated>2023-09-23T14:00:00.000Z</updated>
     
@@ -198,17 +240,17 @@
     
     
     
-    <category term="mysql" scheme="https://xingluoxiqiao.github.io/categories/mysql/"/>
+    <category term="mysql" scheme="https://xlxq.fun/categories/mysql/"/>
     
     
-    <category term="mysql" scheme="https://xingluoxiqiao.github.io/tags/mysql/"/>
+    <category term="mysql" scheme="https://xlxq.fun/tags/mysql/"/>
     
   </entry>
   
   <entry>
     <title>redis数据结构</title>
-    <link href="https://xingluoxiqiao.github.io/posts/abcb1f8f.html"/>
-    <id>https://xingluoxiqiao.github.io/posts/abcb1f8f.html</id>
+    <link href="https://xlxq.fun/posts/abcb1f8f.html"/>
+    <id>https://xlxq.fun/posts/abcb1f8f.html</id>
     <published>2023-08-18T10:19:03.000Z</published>
     <updated>2023-08-20T14:00:00.000Z</updated>
     
@@ -219,17 +261,17 @@
     
     
     
-    <category term="redis" scheme="https://xingluoxiqiao.github.io/categories/redis/"/>
+    <category term="redis" scheme="https://xlxq.fun/categories/redis/"/>
     
     
-    <category term="redis" scheme="https://xingluoxiqiao.github.io/tags/redis/"/>
+    <category term="redis" scheme="https://xlxq.fun/tags/redis/"/>
     
   </entry>
   
   <entry>
     <title>redis为什么高性能</title>
-    <link href="https://xingluoxiqiao.github.io/posts/561bfca6.html"/>
-    <id>https://xingluoxiqiao.github.io/posts/561bfca6.html</id>
+    <link href="https://xlxq.fun/posts/561bfca6.html"/>
+    <id>https://xlxq.fun/posts/561bfca6.html</id>
     <published>2023-08-18T10:19:03.000Z</published>
     <updated>2023-08-20T14:00:00.000Z</updated>
     
@@ -240,17 +282,17 @@
     
     
     
-    <category term="redis" scheme="https://xingluoxiqiao.github.io/categories/redis/"/>
+    <category term="redis" scheme="https://xlxq.fun/categories/redis/"/>
     
     
-    <category term="redis" scheme="https://xingluoxiqiao.github.io/tags/redis/"/>
+    <category term="redis" scheme="https://xlxq.fun/tags/redis/"/>
     
   </entry>
   
   <entry>
     <title>mysql中的锁</title>
-    <link href="https://xingluoxiqiao.github.io/posts/ef86472b.html"/>
-    <id>https://xingluoxiqiao.github.io/posts/ef86472b.html</id>
+    <link href="https://xlxq.fun/posts/ef86472b.html"/>
+    <id>https://xlxq.fun/posts/ef86472b.html</id>
     <published>2023-08-14T10:19:03.000Z</published>
     <updated>2023-08-20T14:00:00.000Z</updated>
     
@@ -261,17 +303,17 @@
     
     
     
-    <category term="mysql" scheme="https://xingluoxiqiao.github.io/categories/mysql/"/>
+    <category term="mysql" scheme="https://xlxq.fun/categories/mysql/"/>
     
     
-    <category term="mysql" scheme="https://xingluoxiqiao.github.io/tags/mysql/"/>
+    <category term="mysql" scheme="https://xlxq.fun/tags/mysql/"/>
     
   </entry>
   
   <entry>
     <title>mysql原理</title>
-    <link href="https://xingluoxiqiao.github.io/posts/6b129314.html"/>
-    <id>https://xingluoxiqiao.github.io/posts/6b129314.html</id>
+    <link href="https://xlxq.fun/posts/6b129314.html"/>
+    <id>https://xlxq.fun/posts/6b129314.html</id>
     <published>2023-08-13T10:19:03.000Z</published>
     <updated>2023-08-20T14:00:00.000Z</updated>
     
@@ -282,17 +324,59 @@
     
     
     
-    <category term="mysql" scheme="https://xingluoxiqiao.github.io/categories/mysql/"/>
+    <category term="mysql" scheme="https://xlxq.fun/categories/mysql/"/>
     
     
-    <category term="mysql" scheme="https://xingluoxiqiao.github.io/tags/mysql/"/>
+    <category term="mysql" scheme="https://xlxq.fun/tags/mysql/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>synchronized详解</title>
+    <link href="https://xlxq.fun/posts/f0baa025.html"/>
+    <id>https://xlxq.fun/posts/f0baa025.html</id>
+    <published>2023-08-12T12:18:02.000Z</published>
+    <updated>2023-08-12T12:18:02.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1>并发编程中的三大问题</h1><ol><li><strong>原子性问题（Atomicity）：</strong><ul><li><strong>定义：</strong> 保证一个操作是不可中断的，要么全部执行成功，要么全部不执行。</li><li><strong>问题：</strong> 当多个线程同时执行一组操作时，可能出现一部分操作已经执行而另一部分没有执行的情况，导致数据不一致性。</li></ul></li><li><strong>可见性问题（Visibility）：</strong><ul><li><strong>定义：</strong> 一个线程对共享变量的修改能够及时被其他线程看到。</li><li><strong>问题：</strong> 当一个线程修改了共享变量的值，其他线程可能无法立即感知到这个变化，从而导致数据的不一致性。</li></ul></li><li><strong>有序性问题（Ordering）：</strong><ul><li><strong>定义：</strong> 确保程序执行的顺序与代码的书写顺序一致。</li><li><strong>问题：</strong> 由于编译器的优化或硬件的乱序执行，代码的执行顺序可能与预期不一致，导致意外的结果。</li></ul></li></ol><h1>JMM（Java Memory Modle）</h1><p>Java内存模型，是Java虚拟机规范中所定义的一种内存模型，Java内存模型是标准化的，屏蔽掉了底层不同计算机的区别。它是一套规范，描述了Java程序中各种变量(线程共享变量)的访问规则，以及在JVM中将变量存储到内存和从内存中读取变量这样的底层细节。Java内存模型是一套在多线程读写共享数据时，对共享数据的可见性、有序性、和原子性的规则和保障。</p><ol><li>主内存：是所有线程都共享的，都能访问的。所有的共享变量都存储于主内存。</li><li>工作内存：每一个线程有自己的工作内存，工作内存只存储该线程对共享变量的<strong>副本</strong>。线程对变量的所有的操作(读，取)都必须在工作内存中完成，而不能直接读写主内存中的变量，不同线程之间也不能直接访问对方工作内存中的变量。</li><li>JMM是一种抽象的逻辑概念，Java内存模型和计算机硬件内存架构是一个相互交叉的关系，是一种抽象概念划分与真实物理硬件的交叉</li></ol><h2 id="JMM中主内存与工作内存之间的数据交互过程">JMM中主内存与工作内存之间的数据交互过程</h2><p>Java内存模型中定义了以下8种操作来完成，主内存与工作内存之间具体的交互协议，即一个变量如何从主内存拷贝到工作内存、如何从工作内存同步回主内存之类的实现细节，虚拟机实现时必须保证下面提及的每一种操作都是原子的、不可再分的。<br>分别是lock、read、load、use、assign、store、write、unlock<br>1.如果对一个变量执行lock操作，将会清空工作内存中此变量的值<br>2.对一个变量执行unlock操作之前，必须先把此变量同步到主内存中</p><h1>synchronized与三大特性</h1><p>synchronized可以保证原子性、有序性、可见性，其中有序性和可见性是通过JMM规范的八个命令中的lock和unlock命令保证的</p><ol><li><strong>原子性（Atomicity）：</strong><ul><li><code>synchronized</code> 保证了代码块或方法中的所有操作要么全部执行成功，要么全部失败，不会被其他线程中断。当一个线程获得锁时，它将独占锁，其他线程必须等待释放锁后才能继续执行。</li></ul></li><li><strong>可见性（Visibility）：</strong><ul><li>当一个线程获得锁进入 <code>synchronized</code> 代码块时，它会清空工作内存中的共享变量副本，强制从主内存中重新读取共享变量的值。同样，线程在释放锁的时候会将修改后的值刷新回主内存，这样其他线程能够感知到这些变化。这确保了对共享变量的修改对其他线程可见。</li></ul></li><li><strong>有序性（Ordering）：</strong><ul><li>as-if-serial：不管编译器和CPU如何重排序，必须保证在单线程情况下程序的结果是正确的。也就是逻辑上有先后关系的代码不会被重排序，例如a=1,b=2,c=a+b可能被重排序为b=2,a=1,c=a+b，但不可能被重排序为a=1,c=a+b,b=2</li><li><code>synchronized</code> 保证了线程进入和退出临界区的有序性。即，一个线程在释放锁之前，必须把修改过的变量刷新到主内存，而获取锁的线程要求从主内存中读取变量的最新值。这就确保了线程之间的有序性，防止了乱序执行。</li></ul></li></ol><h1>特性</h1><h2 id="可重入锁">可重入锁</h2><p>一个线程在持有锁的情况下，可以再次获取相同的锁，而不会造成死锁。这是通过<strong>为每个锁关联一个持有者线程和一个计数器</strong>来实现的。当一个线程第一次获取锁时，计数器为1，每次递归获取锁，计数器递增。只有当计数器降为零时，锁才会被释放。这确保了线程可以多次进入同一个 <code>synchronized</code> 代码块，而不会发生死锁。可重入锁是一种提高程序灵活性和避免死锁的设计。</p><h2 id="不可中断">不可中断</h2><p>不可中断：一个线程获得锁后，另一个线程想要获得锁，必须处于阻塞或等待状态，如果第一个线程不释放锁，第二个线程会一直阻塞或等待，不可被中断。</p><h1>原理</h1><h2 id="monitorenter">monitorenter</h2><ol><li>每一个对象都会和一个<strong>监视器</strong>monitor关联。监视器被占用时会被锁住，其他线程无法来获取该monitor。当JVM执行某个线程的某个方法内部的monitorenter时，它会尝试去获取当前对象对应的monitor的所有权。其过程如下︰</li><li>获取当前对象对应的monitor的所有权的过程：<ul><li>若monior的进入数为0，线程可以进入monitor，并将monitor的进入数置为1。当前线程成为monitor的owner (所有者）</li><li>若线程已拥有monitor的所有权，允许它重入monitor，则进入monitor的进入数加1</li><li>若其他线程已经占有monitor的所有权，那么当前尝试获取monitor的所有权的线程会被阻塞，直到monitor的进入数变为0，才能重新尝试获取monitor的所有权。</li></ul></li><li>synchronized的锁对象会关联一个monitor,这个monitor不是我们主动创建的,是JVM的线程执行到这个同步代码块,发现锁对象没有monitor就会创建monitor,monitor内部有两个重要的成员变量：<ul><li>owner:拥有这把锁的线程</li><li>recursions会记录线程拥有锁的次数,当一个线程拥有monitor后其他线程只能等待</li></ul></li></ol><h2 id="monitorexit">monitorexit</h2><ol><li>能执行monitorexit指令的线程一定是拥有当前对象的monitor的所有权（owner）的线程。</li><li>执行monitorexit时会将monitor的进入数减1。当monitor的进入数减为0时，当前线程退出monitor，不再拥有monitor的所有权，此时其他被这个monitor阻塞的线程可以尝试去获取这个monitor的所有权monitorexit释放锁。</li><li>monitorexit插入在方法结束处和异常处，JVM保证每个monitorenter必须有对应的monitorexit，因此<strong>synchornized出现异常时会释放锁</strong></li></ol><h2 id="对象头的结构">对象头的结构</h2><p>在 HotSpot JVM 中，对象头包括两部分信息，分别是 Mark Word 和 Klass Pointer</p><ol><li>Mark Word用于存储对象自身的运行时数据，如哈希码(HashCode ) 、GC分代年龄、锁状态标志线程持有的锁、偏向线程ID、偏向时间戳等等，占用内存大小与虚拟机位长一致。</li><li>Klass Pointer用于存储对象的类型指针，该指针指向它的类元数据，JVM通过这个指针确定对象是哪个类的实例。该指针的位长度为JVM的一个字大小，即32位的JVM为32位，64位的JVM为64位。</li></ol><h1>锁升级</h1><ol><li><strong>偏向锁（Biased Locking）：</strong><ul><li>初始时，一个对象的头部信息会包含偏向锁标记。当某个线程访问这个对象并获取锁时，会将该线程的ID记录在对象头中，并将偏向锁标记置为1。之后，如果同一个线程再次访问该对象，无需竞争，直接获取锁。这提高了同一线程多次获取锁的效率。</li></ul></li><li><strong>轻量级锁（Lightweight Locking）：</strong><ul><li>当有多个线程竞争同一把锁时，偏向锁就不再合适。此时，锁会升级为轻量级锁。在轻量级锁的情况下，当前获取到锁的线程将对象的Mark Word复制到栈帧中的Lock Recod中，Mark Word更新为指向Lock Record的指针。其他线程在尝试获取锁时会将对象头的 Mark Word 复制到线程的栈帧中，并进行自旋操作，而不是直接阻塞线程。如果自旋失败（10次以上仍未获取），锁升级为重量级锁。</li></ul></li><li><strong>重量级锁（Heavyweight Locking）：</strong><ul><li>当轻量级锁自旋失败，多个线程竞争同一把锁的时候，锁会升级为重量级锁。在这种情况下，JVM 使用操作系统提供的互斥量来实现锁。此时，如果一个线程获取了锁，其他线程必须阻塞等待。重量级锁是通过对象头关联的monitor（见补充）实现的。</li></ul></li></ol><h1>优化</h1><ol><li>锁消除：在synchronized修饰的代码中，如果不存在操作临界资源的情况，编译时JIT触发锁消除，相当于无锁</li><li>锁膨胀：如果在一个循环中，频繁的获取和释放做资源，这样带来的消耗很大，锁膨胀就是将锁的范围扩大，避免频繁的竞争和获取锁资源带来不必要的消耗</li><li>锁升级：synchronized在JDK1.6之前，获取不到锁，立即挂起当前线程，所synchronized性能比较差，之后做了锁升级的优化，即无锁—&gt;偏向锁—&gt;轻量级锁—&gt;重量级锁；有的观点认为锁只能升级，不能降级，也有说锁降级确实是会发生的，当 JVM 进入安全点（SafePoint）的时候，会检查是否有闲置的 Monitor，然后试图进行降级。</li></ol><h1>补充</h1><h2 id="java中对象的结构">java中对象的结构</h2><p>java对象由三部分组成：对象头，实例数据，对齐填充</p><ol><li>对象头：由 Mark Word 和 Klass Pointer组成</li><li>实例数据：就是类中定义的成员变量</li><li>对齐填充：并不是必然存在的，也没有什么特别的意义，他仅仅起着占位符的作用，由于HotSpot VM的自动内存管理系统要求对象起始地址必须是8字节的整数倍，换句话说，就是对象的大小必须是8字节的整数倍。而对象头正好是8字节的倍数，因此，当对象实例数据部分没有对齐时，就需要通过对齐填充来补全。</li></ol><h2 id="monitor">monitor</h2><ol><li>每一个Java对象都<code>可以</code>与一个监视器monitor关联，我们可以把它理解成为一把锁，当一个线程想要执行一段被synchronized圈起来的同步方法或者代码块时，该线程得先获取到synchronized修饰的对象对应的monitor。</li><li>monitor并不是随着对象创建而创建的。我们是通过synchronized修饰符告诉VM需要为我们的某个对象创建关联的monitor对象。</li><li>monitor的重要成员变量<ul><li>_owner:初始时为NULL。当有线程占有该monitor时，owner标记为该线程的唯一标识。当线程释放monitor时，owner又恢复为NULL。owner是一个临界资源，JVM是通过CAS操作来保证其线程安全的。</li><li>_CXq∶竞争队列，所有请求锁的线程首先会被放在这个队列中（单向链接）。_cxq是一个临界资源，JVM通过CAS原子指令来修改_cxq队列。修改前_cxq的旧值填入了node的next字段，_cxq指向新值（新线程)。因此_cxq是一个后进先出的stack(栈)。</li><li>_EntryList : _cxq队列中有资格成为候选资源的线程会被移动到该队列中。</li><li>_WaitSet :因为调用wait方法而被阻塞的线程会被放在该队列中。</li></ul></li><li>monitor是重量级锁：<ul><li>ObjectMonitor（hotspot的monitor实现）的函数调用中会涉及到Atomic::cmpxchg_ptr，Atomic:.inc_ptr等内核函数，执行同步代码块，没有竞争到锁的对象会park()被挂起，竞争到锁的线程会unpark()唤醒。这个过程中存在操作系统用户态和内核态的转换，这种切换会消耗大量的系统资源。所以synchronized在Java语言中是一个重量级(Heavyweight)的操作。</li></ul></li></ol><h2 id="安全点（safe-point）">安全点（safe point）</h2><p>安全点是程序执行的一个状态，JVM 在这个状态下，能够确保所有线程都在安全位置，不会出现对对象引用的修改。在安全点上，JVM 可以停止所有线程，进行垃圾回收、线程栈的修改等操作，而不会导致数据不一致或错误的状态。在安全点上，线程不会在执行关键的、可能导致数据不一致的代码。<br>安全点通常发生在一些特定的位置，包括：</p><ol><li><strong>方法调用：</strong><ul><li>在方法调用的地方，JVM 可以方便地确保所有线程都在一个安全的状态。这可以是方法的入口或返回点。</li></ul></li><li><strong>循环跳跃：</strong><ul><li>在循环的迭代点，例如 for 循环的迭代点，也是安全点。这是因为在循环迭代点，线程通常都在相对较安全的位置。</li></ul></li><li><strong>异常抛出：</strong><ul><li>在抛出异常的地方，例如在 <code>throw</code> 语句附近，也是一个潜在的安全点。</li></ul></li><li><strong>代码生成器插入的安全点：</strong><ul><li>代码生成器在生成机器码时，会在适当的位置插入安全点，以确保在执行这些机器码时，所有线程都在一个安全的状态。。在某些情况下，为了减少安全点的频率，JVM 可能会选择较少的插入安全点，从而提高程序的运行效率。</li></ul></li></ol><h2 id="synchronized与Lock的区别">synchronized与Lock的区别</h2><ol><li>synchronized是关键字，而Lock是一个接口。</li><li>synchronized会自动释放锁，而Lock必须手动释放锁。</li><li>synchronized是不可中断的，Lock可以中断也可以不中断。</li><li>通过Lock可以知道线程有没有拿到锁，而synchronized不能。</li><li>synchronized能锁住方法和代码块，而Lock只能锁住代码块。</li><li>Lock可以使用读锁提高多线程读效率。</li><li>synchronized是非公平锁，ReentrantLock可以控制是否是公平锁。</li></ol><h1>总结</h1><ol><li>synchornized是可重入锁，不可中断锁</li><li>可以保证原子性，有序性和可见性（JMM中定义的8种原子操作）</li><li>原理是java对象头（偏向锁、轻量级锁）以及monitor（重量级锁）</li><li>jdk6后提供了锁优化：锁消除、锁膨胀、锁升级</li></ol>]]></content>
+    
+    
+    <summary type="html">java基础知识</summary>
+    
+    
+    
+    <category term="java" scheme="https://xlxq.fun/categories/java/"/>
+    
+    
+    <category term="java,锁" scheme="https://xlxq.fun/tags/java-%E9%94%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>函数式接口与lambda表达式</title>
+    <link href="https://xlxq.fun/posts/b427a511.html"/>
+    <id>https://xlxq.fun/posts/b427a511.html</id>
+    <published>2023-08-12T12:18:02.000Z</published>
+    <updated>2023-08-12T12:18:02.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1>函数式接口</h1><ol><li>函数式接口是指只包含一个抽象方法的接口。Java中引入了函数式接口的概念，主要是为了支持Lambda表达式的使用。Lambda表达式是一种轻量级的匿名函数，可以直接传递给函数式接口的对象。函数式接口的定义要求使用<code>@FunctionalInterface</code>注解，该注解用于强制检查接口是否符合函数式接口的标准。</li><li>以下是函数式接口的特征：<ul><li>接口中只能有一个抽象方法（可以包含默认方法和静态方法）。</li><li><code>@FunctionalInterface</code> 注解用于标识该接口是函数式接口（可选）。</li></ul></li></ol><h1>函数式接口的实现方式</h1><ol><li><strong>使用匿名内部类：</strong> 使用匿名内部类是最传统的方式，它允许直接实现接口的抽象方法。</li></ol><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">MyFunctionalInterface</span> <span class="variable">myFunction</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">MyFunctionalInterface</span>() &#123;     </span><br><span class="line"><span class="meta">@Override</span>     </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">myMethod</span><span class="params">()</span> &#123;         </span><br><span class="line">System.out.println(<span class="string">&quot;Implementation using anonymous inner class&quot;</span>);     </span><br><span class="line">&#125; </span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><ol start="2"><li><strong>使用Lambda表达式：</strong> Lambda表达式是一种更简洁的方式，特别适用于函数式接口。</li></ol><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">MyFunctionalInterface</span> <span class="variable">myFunction</span> <span class="operator">=</span> </span><br><span class="line">() -&gt; System.out.println(<span class="string">&quot;Implementation using Lambda expression&quot;</span>);</span><br></pre></td></tr></table></figure><ol start="3"><li><strong>使用方法引用：</strong> 如果接口的抽象方法与现有方法的签名兼容，可以使用方法引用。方法引用提供了一种更简洁的语法。</li></ol><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//在这里，`myObject::myMethod` 是对 `MyFunctionalInterface` 中的抽象方法的实现。</span></span><br><span class="line">  <span class="type">MyClass</span> <span class="variable">myObject</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">MyClass</span>(); </span><br><span class="line">  <span class="type">MyFunctionalInterface</span> <span class="variable">myFunction</span> <span class="operator">=</span> myObject::myMethod;</span><br></pre></td></tr></table></figure><ol start="4"><li><strong>使用构造方法引用：</strong> 如果函数式接口代表的是一个构造函数，可以使用构造方法引用。</li></ol><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//这里假设 `MyClass` 是一个函数式接口 `MyFunctionalInterface` 的实现类。</span></span><br><span class="line"> <span class="type">MyFunctionalInterface</span> <span class="variable">myFunction</span> <span class="operator">=</span> MyClass::<span class="keyword">new</span>;</span><br></pre></td></tr></table></figure><h1>lambda表达式</h1><p>Lambda表达式是Java中引入的一种轻量级的函数式编程特性，它允许你将一个函数（或称为代码块）作为一个参数传递给方法，或者更简洁地实现函数式接口。</p><p>Lambda表达式的基本语法如下：</p><ul><li><code>(parameters) -&gt; expression</code></li><li><code>(parameters) -&gt; &#123; statements; &#125;</code><br>其中，<code>parameters</code> 是Lambda表达式的参数列表，<code>expression</code> 或 <code>&#123; statements; &#125;</code> 是Lambda表达式的主体。</li></ul><p>以下是一些示例，演示了Lambda表达式的不同用法：</p><ol><li><strong>不带参数的Lambda表达式：</strong><br><code>Runnable runnable = () -&gt; System.out.println(&quot;Hello, Lambda!&quot;);</code><br><code>new Thread(runnable).start();</code></li><li><strong>带参数的Lambda表达式：</strong><br><code>(x, y) -&gt; x + y</code><br>这表示一个接受两个参数 <code>x</code> 和 <code>y</code>，并返回它们的和。</li><li><strong>带主体的Lambda表达式：</strong></li></ol><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//主体可以包含多条语句，并且可以有返回值。</span></span><br><span class="line">(x, y) -&gt; &#123;     </span><br><span class="line"><span class="type">int</span> <span class="variable">sum</span> <span class="operator">=</span> x + y;     </span><br><span class="line">System.out.println(<span class="string">&quot;Sum: &quot;</span> + sum);     </span><br><span class="line"><span class="keyword">return</span> sum; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ol start="4"><li><strong>遍历集合的Lambda表达式：</strong></li></ol><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//这里使用了 `forEach` 方法和Lambda表达式，简化了集合的遍历操作。</span></span><br><span class="line">    List&lt;String&gt; languages = Arrays.asList(<span class="string">&quot;Java&quot;</span>, <span class="string">&quot;Python&quot;</span>, <span class="string">&quot;JavaScript&quot;</span>); </span><br><span class="line">    languages.forEach(language -&gt; System.out.println(language));`</span><br></pre></td></tr></table></figure><p>Lambda表达式的引入使得代码更加简洁、易读，并支持更函数式的编程风格。在使用Lambda表达式时，通常用于实现函数式接口（只有一个抽象方法的接口）的匿名实现。</p>]]></content>
+    
+    
+    <summary type="html">java基础知识</summary>
+    
+    
+    
+    <category term="java" scheme="https://xlxq.fun/categories/java/"/>
+    
+    
+    <category term="java" scheme="https://xlxq.fun/tags/java/"/>
     
   </entry>
   
   <entry>
     <title>反射</title>
-    <link href="https://xingluoxiqiao.github.io/posts/7af799fd.html"/>
-    <id>https://xingluoxiqiao.github.io/posts/7af799fd.html</id>
+    <link href="https://xlxq.fun/posts/7af799fd.html"/>
+    <id>https://xlxq.fun/posts/7af799fd.html</id>
     <published>2023-08-12T12:18:02.000Z</published>
     <updated>2023-08-12T12:18:02.000Z</updated>
     
@@ -303,17 +387,17 @@
     
     
     
-    <category term="java" scheme="https://xingluoxiqiao.github.io/categories/java/"/>
+    <category term="java" scheme="https://xlxq.fun/categories/java/"/>
     
     
-    <category term="java" scheme="https://xingluoxiqiao.github.io/tags/java/"/>
+    <category term="java" scheme="https://xlxq.fun/tags/java/"/>
     
   </entry>
   
   <entry>
     <title>常用API</title>
-    <link href="https://xingluoxiqiao.github.io/posts/e3dac448.html"/>
-    <id>https://xingluoxiqiao.github.io/posts/e3dac448.html</id>
+    <link href="https://xlxq.fun/posts/e3dac448.html"/>
+    <id>https://xlxq.fun/posts/e3dac448.html</id>
     <published>2023-08-12T12:18:02.000Z</published>
     <updated>2023-08-12T12:18:02.000Z</updated>
     
@@ -324,17 +408,17 @@
     
     
     
-    <category term="java" scheme="https://xingluoxiqiao.github.io/categories/java/"/>
+    <category term="java" scheme="https://xlxq.fun/categories/java/"/>
     
     
-    <category term="java" scheme="https://xingluoxiqiao.github.io/tags/java/"/>
+    <category term="java" scheme="https://xlxq.fun/tags/java/"/>
     
   </entry>
   
   <entry>
     <title>集合</title>
-    <link href="https://xingluoxiqiao.github.io/posts/d366874c.html"/>
-    <id>https://xingluoxiqiao.github.io/posts/d366874c.html</id>
+    <link href="https://xlxq.fun/posts/d366874c.html"/>
+    <id>https://xlxq.fun/posts/d366874c.html</id>
     <published>2023-08-11T11:18:02.000Z</published>
     <updated>2023-08-11T11:18:02.000Z</updated>
     
@@ -345,94 +429,10 @@
     
     
     
-    <category term="java" scheme="https://xingluoxiqiao.github.io/categories/java/"/>
+    <category term="java" scheme="https://xlxq.fun/categories/java/"/>
     
     
-    <category term="java" scheme="https://xingluoxiqiao.github.io/tags/java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>字符串</title>
-    <link href="https://xingluoxiqiao.github.io/posts/fc81fbfd.html"/>
-    <id>https://xingluoxiqiao.github.io/posts/fc81fbfd.html</id>
-    <published>2023-08-10T11:18:02.000Z</published>
-    <updated>2023-10-23T14:00:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1>字符串的特点</h1><p>字符串的内容是不会改变的，它的对象在创建后不能被更改<br>（当给字符串变量赋值时，产生了一个新的字符串，两个字符串相加一共有三个字符串参与）</p><h1>构造方式</h1><h2 id="直接赋值">直接赋值</h2><h2 id="new构造函数">new构造函数</h2><p>（参数为空，字符串，字节数组，字符数组（string，byte【】，char【】））</p><h1>字符串的方法</h1><p>equals(string)  ,<br>equalsIgnoreCase(string)  ，<br>String  substring(int beginIndex, int endInde）包头不包尾，包左不包右   返回值是截取的小串<br>String  substring(int beginIndex)  截取到末尾<br>public char charAt(int index)根据索引返回字符<br>public int length()返回字符串的长度<br>public String replace(String target,String replacement)将target替换为replacement</p><h1>字符串拼接</h1><p>”+“从左至右拼接，与&quot;&quot;（空字符串）拼接可以达到将单个字符拼接成字符串的效果</p><h1>StringBuilder</h1><p>一个容器，里面的内容是可变的，提高字符串的操作效率<br>有一个空参构造和形参是一个字符串的构造方法<br>public StringBuilder append (任意类型)      添加数据，并返回对象本身<br>public StringBuilder reverse()      反转容器中的内容<br>public int length()  返回长度（字符出现的个数)<br>public String toString(）把StringBuilder转换为String</p><h1>StringJoiner</h1><p>public StringJoiner (间隔符号)      创建一个StringJoiner对象，指定拼接时的间隔符号<br>public StringJoiner (间隔符号，开始符号，结束符号)     创建一个StringJoiner对象，指定拼接时的间隔符号、开始符号、结束符号<br>add（）<br>length（）<br>toString（）</p><img src="/post-img/Pasted image 20230331170824.png" alt="图片损坏" style="zoom:100%;" /><h1>修改字符串</h1><h2 id="substring">substring</h2><p>用substring进行截取，把左边的字符截取出来拼接到右侧去。</p><h2 id="字符数组">字符数组</h2><p>把字符串先变成一个字符数组，然后调整字符数组里面数据，最后再把字符数组变成字符串。</p><h1>字符串原理小结</h1><p>1.<strong>字符串存储的内存原理</strong><br>直接赋值会复用字符串常量池中的<br>new出来不会复用，而是开辟一个新的空间<br>2.<strong>== 号比较的到底是什么?</strong><br>基本数据类型比较数据值<br>引用数据类型比较地址值<br>3.<strong>字符串拼接的底层原理</strong><br>如果没有变量参与，都是字符串直接相加，编译之后就是拼接之后的结果，会复用串池中的字符串。如果有变量参与，会创建新的字符串，浪费内存。<br>4.<strong>StringBuilder提高效率原理</strong><br>所有要拼接的内容都会往StringBuilder中放，不会创建很多无用的空间，节约内存<br>5.<strong>StringBuilder源码分析</strong><br>默认创建一个长度为16的字节数组<br>添加的内容长度小于16，直接存<br>添加的内容大于16会扩容（原来的容量* 2+2)<br>如果扩容之后还不够，以实际长度为准</p>]]></content>
-    
-    
-    <summary type="html">java基础知识</summary>
-    
-    
-    
-    <category term="java" scheme="https://xingluoxiqiao.github.io/categories/java/"/>
-    
-    
-    <category term="java" scheme="https://xingluoxiqiao.github.io/tags/java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>网络编程基础</title>
-    <link href="https://xingluoxiqiao.github.io/posts/adcb768c.html"/>
-    <id>https://xingluoxiqiao.github.io/posts/adcb768c.html</id>
-    <published>2023-08-10T11:18:02.000Z</published>
-    <updated>2023-10-23T14:00:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1>网络编程简介</h1><p>网络编程是在网络通信协议下，计算机与计算机之间通过网络进行数据传输<br>java是使用Java.net包下的技术开发出常用的网络应用程序<br>常见的软件架构有B/S和C/S两种：<br>其中B/S是浏览器/服务器架构，它不需要开发客户端，只需要页面+服务端，并且用户不需要下载，打开浏览器就能使用，但是如果应用过大，用户体验就会收到影响；它适合移动互联网应用，可以在任何地方随时访问的系统<br>而C/S是客户端/服务器架构，它的画面可以做的非常精美，用户体验好；但是需要开发客户端，也需要开发服务端，并且用户需要下载和更新的时候太麻烦；它适合定制专业化的办公类软件</p><h1>网络编程三要素</h1><p>IP：设备在网络中的地址，是唯一的标识<br>端口号：是应用程序在设备中唯一的标识<br>协议：是数据在网络中传输的规则</p><h2 id="IP">IP</h2><p>是分配给上网设备的数字标签<br>通俗理解为上网设备在网络中的地址，是唯一的；分为IPv4、IPv6<br>其中IPv4采用32位地址长度，分成4组，简写为点分十进制<br>IPv6是在IPv4的地址总数不够后出现的，采用128位地址长度，分为8组，简写为冒分十六进制</p><h3 id="IPv4的地址分类形式">IPv4的地址分类形式</h3><p>公网地址(万维网使用)和私有地址(局域网使用)。<br>192.168.开头的就是私有址址，范围即为192.168.0.0–192.168.255.255，专门为组织机构内部使用，以此节省IP<br>特殊IP地址:127.0.0.1，也可以是localhost:是回送地址也称本地回环地址，也称本机IP，永远只会寻找当前所在本机。<br>但是它不同于本机当前IP地址，因为本机当前IP地址可能会随着网络环境的变化而改变，通过它向自己发送信息是通过路由器的，而127.0.0.1不通过路由器</p><h3 id="常用的CMD命令">常用的CMD命令</h3><p>ipconfig：查看本机IP地址<br>ping：检查网络是否畅通</p><h3 id="InetAddress类">InetAddress类</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//static InetAddress getByName(String host)  确定主机名称的IP地址，主机名称可以是机器名称，也可以是IP地址</span></span><br><span class="line"><span class="comment">//string getHostName()  获取此IP地址的主机名</span></span><br><span class="line"><span class="comment">//string getHostAddress()   返回文本显示中的IP地址字符串</span></span><br><span class="line"><span class="comment">//1.获取InetAddress的对象</span></span><br><span class="line"><span class="comment">//IP的对象   一台电脑的对象</span></span><br><span class="line"><span class="type">InetAddress</span> <span class="variable">address</span> <span class="operator">=</span> InetAddress.getByName(<span class="string">&quot;主机名&quot;</span>);</span><br><span class="line">system.out.println(address);</span><br><span class="line"></span><br><span class="line"><span class="type">string</span> <span class="variable">name</span> <span class="operator">=</span> address.getHostName();</span><br><span class="line">System.out.println(name);</span><br><span class="line"></span><br><span class="line"><span class="type">String</span> <span class="variable">ip</span> <span class="operator">=</span> address.getHostAddress();</span><br><span class="line">system.out.println(ip);</span><br><span class="line"></span><br></pre></td></tr></table></figure><h2 id="端口号">端口号</h2><p>应用程序在设备中唯一的标识。<br>端口号:由两个字节表示的整数，取值范围:0~65535<br>其中0~1023之间的端口号用于一些知名的网络服务或者应用。<br>我们自己使用1024以上的端口号就可以了。<br>注意:一个端口号只能被一个应用程序使用。</p><h2 id="协议">协议</h2><p>计算机网络中，连接和通信的规则被称为网络通信协议<br>OSl参考模型:世界互联协议标准，全球通信规范，单模型过于理想化，未能在因特网上进行广泛推广TCP/IP参考模型(或TCP/IP协议):事实上的国际标准。<br><img src="/post-img/Pasted image 20230718172327.png" alt="图片损坏" style="zoom:100%;" /></p><h3 id="UDP协议">UDP协议</h3><p>用户数据报协议(User Datagram Protocol)<br>UDP是面向无连接通信协议。<br>速度快，有大小限制一次最多发送64K，数据不安全，易丢失数据</p><h4 id="代码实现">代码实现</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//发送数据</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//1.创建DatagramSocket对象(快递公司)</span></span><br><span class="line"><span class="comment">//细节:</span></span><br><span class="line"><span class="comment">//绑定端口。以后我们就是通过这个端口往外发送</span></span><br><span class="line"><span class="comment">//空参:所有可用的端口中随机一个进行使用</span></span><br><span class="line"><span class="comment">//有参:指定端口号进行绑定</span></span><br><span class="line"><span class="type">DatagramSocket</span> <span class="variable">ds</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">DatagramSocket</span>();</span><br><span class="line"></span><br><span class="line"><span class="comment">//2.打包数据</span></span><br><span class="line"><span class="type">String</span> <span class="variable">str</span> <span class="operator">=</span><span class="string">&quot;你好威啊!!!&quot;</span>;</span><br><span class="line"><span class="type">byte</span>[] bytes = str.getBytes();</span><br><span class="line"><span class="type">InetAddress</span> <span class="variable">address</span> <span class="operator">=</span> InetAddress.getByName(<span class="string">&quot;127.0.0.1&quot;</span>);</span><br><span class="line"><span class="type">int</span> <span class="variable">port</span> <span class="operator">=</span> <span class="number">10086</span>;</span><br><span class="line"><span class="type">DatagramPacket</span> <span class="variable">dp</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">DatagramPacket</span>(bytes,bytes.length,address,port);</span><br><span class="line"><span class="comment">//3.发送数据</span></span><br><span class="line">ds.send(dp);</span><br><span class="line"><span class="comment">//4.释放资源</span></span><br><span class="line">ds.close();</span><br></pre></td></tr></table></figure><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//1.创建DatagramSocket对象(快递公司)</span></span><br><span class="line"><span class="comment">//细节:</span></span><br><span class="line">/在接收的时候,一定要绑定端口,而且绑定的端口一定要跟发送的滑口保持一致</span><br><span class="line"><span class="type">DatagramSocket</span> <span class="variable">ds</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">DatagramSocket</span>(<span class="number">10086</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//2.接收数据包</span></span><br><span class="line"><span class="type">byte</span>[] bytes = <span class="keyword">new</span> <span class="title class_">byte</span>[<span class="number">1024</span>];</span><br><span class="line"><span class="type">DatagramPacket</span> <span class="variable">dp</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">DatagramPacket</span>(bytes,bytes.length);</span><br><span class="line"><span class="comment">//receive是阻塞的，会一直等待发送端发送数据（后面的代码不会执行）</span></span><br><span class="line">ds.receive(dp);</span><br><span class="line"><span class="comment">//3.解析数据包</span></span><br><span class="line"><span class="type">byte</span>[]data = dp.getData();</span><br><span class="line"><span class="type">int</span> <span class="variable">len</span> <span class="operator">=</span> dp.getLength();</span><br><span class="line"><span class="type">InetAddress</span> <span class="variable">address</span> <span class="operator">=</span> dp.getAddress();</span><br><span class="line"><span class="type">int</span> <span class="variable">port</span> <span class="operator">=</span> dp.getPort();</span><br><span class="line">system.out.println(<span class="string">&quot;接收到数据 +new string(data, offset e,len));</span></span><br><span class="line"><span class="string">System.out.print1n(&quot;</span>该数据是从”+ address +这台电脑中的<span class="string">&quot;+port +&quot;</span>这个端口发出的<span class="string">&quot;);</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">//4.释放资源</span></span><br><span class="line"><span class="string">ds.close();</span></span><br></pre></td></tr></table></figure><p>运行时应该先运行接收端，再运行发送端，否则发送端会报错（找不到接收的端口）</p><h4 id="三种通信方式">三种通信方式</h4><p>1.单播<br>2.组播<br>地址:224.0.0.0~239.255.255.255<br>其中224.0.0.0~224.0.0.255为预留的组播地址<br>比单播多一步</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//将接收端当前本机添加到224.0.0.1的这一组当中</span></span><br><span class="line"><span class="type">InetAddress</span> <span class="variable">address</span> <span class="operator">=</span> InetAddress.getByName(<span class="string">&quot;&quot;</span><span class="number">224.0</span><span class="number">.0</span><span class="number">.1</span><span class="string">&quot;);</span></span><br><span class="line"><span class="string">ms.joinGroup( address);</span></span><br></pre></td></tr></table></figure><p>3.广播 地址255.255.255.255<br>将单播的接收地址改为255.255.255.255</p><h3 id="TCP协议">TCP协议</h3><p>传输控制协议TCP(Transmission Control Protocol)<br>TCP协议是面向连接的通信协议。<br>速度慢，没有大小限制，数据安全。<br>TCP通信协议是一种可靠的网络协议，它在通信的两端各建立一个Socket对象,通信之前要保证连接已经建立通过Socket产生IO流来进行网络通信<br><img src="/post-img/Pasted image 20230718173645.png" alt="图片损坏" style="zoom:100%;" /><br><img src="/post-img/Pasted image 20230718173745.png" alt="图片损坏" style="zoom:100%;" /><br><img src="/post-img/Pasted image 20230718173854.png" alt="图片损坏" style="zoom:100%;" /><br><img src="/post-img/Pasted image 20230718173838.png" alt="图片损坏" style="zoom:100%;" /></p><h1>UUID</h1><p>生成随机且唯一的一串序列号，可用于文件名</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">String</span> <span class="variable">str</span> <span class="operator">=</span> UUID.randomUUID( ).toString().replace(<span class="string">&quot;-&quot;</span>,<span class="string">&quot;&quot;</span>);</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-    <summary type="html">计算机基础</summary>
-    
-    
-    
-    <category term="计算机基础" scheme="https://xingluoxiqiao.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="计算机基础" scheme="https://xingluoxiqiao.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>面向对象</title>
-    <link href="https://xingluoxiqiao.github.io/posts/28239a8d.html"/>
-    <id>https://xingluoxiqiao.github.io/posts/28239a8d.html</id>
-    <published>2023-08-10T11:18:02.000Z</published>
-    <updated>2023-10-23T14:00:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1>类</h1><h2 id="类的组成部分">类的组成部分</h2><p>成员变量，成员方法，构造器，（内部类，代码块）</p><h2 id="标准的javabean类">标准的javabean类</h2><p>1.类名需要见名知意<br>2.成员变量使用private修饰<br>3.提供至少两个构造方法（无参构造方法和带全部参数的构造方法成员方法）<br>4.提供每一个成员变量对应的setXxx（）/getXxx（）如果还有其他行为，也需要写上</p><h3 id="构造方法">构造方法</h3><p>方法名与类名需完全一致，没有返回值，创建对象时系统自动调用进行对象的初始化<br>没有构造方法时默认调用无参构造方法</p><h3 id="成员变量和局部变量">成员变量和局部变量</h3><img src="/post-img/Pasted image 20230331163238.png" alt="图片损坏" style="zoom:100%;" /><h4 id="this">this</h4><p>可以区分成员变量和局部变量，存储的是所在方法调用者的地址值，采用就近原则</p><h2 id="代码块：">代码块：</h2><h3 id="局部代码块">局部代码块</h3><p>变量的作用范围是一对大括号内，提前结束变量的生命周期</p><h3 id="构造代码块">构造代码块</h3><p>写在成员位置的代码块，可以把多个构造方法中重复的代码抽取出来；创建本类对象的时候会先执行构造代码块，再执行构造方法</p><h3 id="静态代码块">静态代码块</h3><p>通过static关键字修饰，随类的加载而加载，并且自动触发，只执行一次，在类加载的时候，做一些数据初始化的时候使用</p><h2 id="内部类">内部类</h2><h3 id="定义">定义</h3><p>定义在一个类里面的类就是内部类，<br>当B表示的事物是A的一部分，且B单独存在没有意义时，可以将B定义为A的内部类</p><h3 id="分类">分类</h3><h4 id="成员内部类">成员内部类</h4><p>写在成员位置的，属于外部类的成员</p><h5 id="获取方法">获取方法</h5><p>1.当成员内部类被private修饰时。在外部类编写方法，对外提供内部类对象<br>2.当成员内部类被非私有修饰时，直接创建对象。<br>outer.Inner oi = new Outer().new Inner();<br>3.外部类成员变量和内部类成员变量重名时，用”Outer.this.变量名“访问</p><h4 id="静态内部类">静态内部类</h4><p>是一种特殊的成员内部类</p><h5 id="创建对象方式">创建对象方式</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Outer.Inner oi=<span class="keyword">new</span> <span class="title class_">Outer</span>.Inner();</span><br></pre></td></tr></table></figure><h5 id="调用其中方法">调用其中方法</h5><p>非静态方法：先创建对象，用对象调用<br>静态方法：外部类名.内部类名.方法名（）；</p><h4 id="局部内部类">局部内部类</h4><p>1.将内部类定义在方法里面就叫做局部内部类，类似于方法里面的局部变量。<br>2.外界无法直接使用，需要在方法内部创建对象并使用。<br>3.该类可以直接访问外部类的成员，也可以访问方法内的局部变量。</p><h4 id="匿名内部类">匿名内部类</h4><p>隐藏了名字的内部类，可以写在成员位置，也可以写在局部位置</p><h5 id="格式">格式</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//包含了继承或实现，方法重写，创建对象</span></span><br><span class="line"><span class="comment">//整体就是一个类的子类对象或接口的实现对象</span></span><br><span class="line"><span class="comment">//常用于构造函数式接口的实现对象并作为参数传递给方法</span></span><br><span class="line"><span class="comment">//可以理解为一个一次性对象，简化代码，还可以利用lambda表达式进一步简化</span></span><br><span class="line"><span class="keyword">new</span> 类名或接口名()&#123;</span><br><span class="line">重写方法；</span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure><h1>修饰符</h1><h2 id="static">static</h2><h3 id="静态变量">静态变量</h3><p>被该类所有对象共享，不属于对象属于类，随着类的加载而加载，优先于对象存在</p><h3 id="静态方法">静态方法</h3><p>多用在测试类和工具类中，javabean类很少使用</p><h4 id="调用方式">调用方式</h4><p>类名调用，对象调用</p><h4 id="工具类">工具类</h4><p>1.类名见名知意<br>2.私有化构造方法<br>3.成员方法用static修饰<br>4.外部无法创建其对象，但是可以调用其中的方法</p><h4 id="注意事项">注意事项</h4><p>静态方法中，只能访问静态变量;    非静态方法可以访问所有;     静态方法中没有this关键字<br><img src="/post-img/Pasted image 20230331172501.png" alt="图片损坏" style="zoom:100%;" /></p><h2 id="final">final</h2><p>修饰方法：不能被重写；<br>修饰类：不能被继承；<br>修饰变量：常量，只能被赋值一次<br>常量：全部大写，多个单词间用下划线隔开<br>修饰基本数据类型，变量存储的数据值不能发生改变<br>修饰引用数据类型，变量存储的地址值不能发生改变，对象内部的值可以改变</p><h2 id="权限修饰符">权限修饰符</h2><img src="/post-img/Pasted image 20230403112615.png" alt="图片损坏" style="zoom:100%;" /><h1>包</h1><p>包就是文件夹，用来管理各种不同功能的java类，方便后期代码维护<br>包名：公司域名反写加包的作用，全英文小写，见名知意<br>使用同一个包中的类时，不需要导包，使用java.lang包中的类时，不需要导包，其他情况需要<br>同时使用两个包中的同名类，需要用全类名（包名.类名）</p><h1>接口</h1><h2 id="接口的定义和使用">接口的定义和使用</h2><p>1.接口是一种规则，是对行为的抽象<br>2.接口用关键字interface来定义</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> interface 接口名&#123;&#125;</span><br></pre></td></tr></table></figure><p>3.接口不能实例化<br>4.接口和类之间是实现关系，通过implements关键字表示</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> class 类名 implements接口名&#123;&#125;</span><br></pre></td></tr></table></figure><p>5.接口的子类（实现类)<br>要么重写接口中的所有抽象方法<br>要么是抽象类<br>6.注意:<br>1.接口和类的实现关系，可以单实现，也可以多实现。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> class 类名 implements 接口名<span class="number">1</span>，接口名<span class="number">2</span>&#123;&#125;</span><br></pre></td></tr></table></figure><p>2.实现类可以在继承一个类的同时实现多个接口。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> class 类名 extends父类 implements 接口名<span class="number">1</span>，接口名<span class="number">2</span>&#123;&#125;</span><br></pre></td></tr></table></figure><p>7.接口代表规则，是行为的抽象，想让哪个类拥有一个行为，就让这个类实现对应的接口<br>8.当一个方法的参数是接口时，可以传递接口所有实现类的对象，称为接口多态</p><h2 id="接口中成员的特点：">接口中成员的特点：</h2><p>1.成员变量只能是常量（默认修饰符public static final）<br>2.没有构造方法<br>3.（JDK7）成员方法只能是抽象方法（默认修饰符public abstract）<br>4.（JDK8）接口中可以定义有方法体的方法（default，static）<br>5.（JDK9）接口中可以定义私有方法</p><h2 id="抽象方法">抽象方法</h2><p>将共性的行为（方法）抽取到父类之后。由于每一个子类执行的内容不一样，所以在父类中不能确定具体的方法体。该方法就可以定义为抽象方法。如果一个类中存在抽象方法，那么该类就必须声明为抽象类。</p><h3 id="抽象类和抽象方法的注意事项">抽象类和抽象方法的注意事项</h3><p>1.抽象类不能实例化<br>2.抽象类中不一定有抽象方法，有抽象方法的类一定是抽象类可以有构造方法<br>3.抽象类的子类要么重写抽象类中的所有抽象方法，要么是抽象类<br>意义：实现格式的统一<br><img src="/post-img/Pasted image 20230403114457.png" alt="图片损坏" style="zoom:100%;" /><br><img src="/post-img/Pasted image 20230403114858.png" alt="图片损坏" style="zoom:100%;" /><br><img src="/post-img/Pasted image 20230403114950.png" alt="图片损坏" style="zoom:100%;" /><br><img src="/post-img/Pasted image 20230403115048.png" alt="图片损坏" style="zoom:100%;" /></p><h1>面向对象三大特征</h1><h2 id="封装">封装</h2><p>对象代表什么，就得封装对应的数据，并提供数据对应的行为<br>在java中体现为类的构建</p><h2 id="继承">继承</h2><h3 id="继承的作用">继承的作用</h3><p>是面向对象三大特征之一（封装，继承，多态），可以让类与类之间产生子与父的联系<br>子类可以得到父类的属性和行为并可以使用<br><img src="/post-img/Pasted image 20230403085024.png" alt="图片损坏" style="zoom:100%;" /><br>当类与类之间,存在相同(共性)的内容,并满足子类是父类的一种,就可以考虑使用继承来优化代码</p><h3 id="继承的特点">继承的特点</h3><p>1.java只支持单继承，不支持多继承，但支持多层继承（每个子类只有一个父类，每个父类可有多个子类，父类也可作为子类）<br>2.java中所有的类都直接或间接地继承于object类<br>3.子类只能访问父类中非私有的成员<br>4.成员方法的继承采用虚方法表的形式：<br>虚方法是指不是由private，static，final修饰的方法，子类得到父类中的这些方法后，可以直接使用<br>子类可以将自己的虚方法添加到自己的虚方法表中，传递给自己的子类，如果有重写的方法，会覆盖</p><h3 id="方法的重写">方法的重写</h3><p>当父类的方法不能满足子类现在的需求时，需要进行方法重写<br>书写格式：<br>在继承体系中，子类出现了和父类中一模一样的方法声明（方法名，参数），我们就称子类这个方法是重写的方法。<br>用”@override“检验重写方法时是否有语法错误<br>注意：<br>1．重写方法的名称、形参列表必须与父类中的一致。<br>2．子类重写父类方法时，访问权限子类必须大于等于父类（空着不写 &lt; protected &lt; public )<br>3．子类重写父类方法时，返回值类型子类必须小于等于父类<br>4．建议:重写的方法尽量和父类保持一致<br>5．只有被添加到虚方法表中的方法才能被重写</p><h3 id="继承中方法的访问特点">继承中方法的访问特点</h3><h4 id="继承中成员方法的访问特点">继承中成员方法的访问特点</h4><p>this就近原则，super直接调用父类</p><h4 id="继承中构造方法的访问特点">继承中构造方法的访问特点</h4><p>1.父类的构造方法不能被子类继承<br>2.子类中所有的构造方法默认先执行父类的无参构造方法，再执行自己<br>这是因为子类在初始化的时候，有可能会使用到父类中的数据，如果父类没有完成初始化，子类将无法使用父类的数据。子类初始化之前，一定要调用父类构造方法先完成父类数据空间的初始化。<br>因此子类构造方法的第一行默认是super（），不写也存在，且必须在第一行；如果想调用父类的有参构造，必须手动调用（super（形参））</p><h4 id="this和super">this和super</h4><p>this理解为一个变量，表示方法调用者的地址值，super代表父类存储空间<br><img src="/post-img/Pasted image 20230403091147.png" alt="图片损坏" style="zoom:100%;" /></p><p>多态：同类型的对象表现出的不同形态（同一个父类的不同子类）<br>格式：父类类型 对象名称=子类对象；<br>前提：有继承（或实现）关系，有方法重写，有父类引用指向子类对象</p><h2 id="多态">多态</h2><h3 id="多态调用成员的特点">多态调用成员的特点</h3><h4 id="变量调用">变量调用</h4><p>编译看左边，运行也看左边<br>编译代码的时候，会看左边的父类中有没有这个变量，有则编译成功，否则编译失败<br>运行代码的时候，实际获取的是左边父类中成员变量的值</p><h4 id="方法调用">方法调用</h4><p>编译看左边，运行看右边<br>编译代码的时候，会看左边的父类中有没有这个方法，如果有编译成功，否则编译失败<br>运行的时候实际运行的是子类中的方法<br>（Animal a =new Dog(),  a.name.sout=动物，a.show=Dog—showf）<br><img src="/post-img/Pasted image 20230403111104.png" alt="图片损坏" style="zoom:100%;" /></p><h3 id="优势和弊端">优势和弊端</h3><p>优势：使用父类型作为参数，可以接收所有子类对象，体现多态的扩展性与便利性<br>弊端：不能调用子类的特有功能（父类中没有的方法编译时直接报错）<br>解决方法：将父类类型强转成子类类型，但不能转换成其他类的类型</p><h3 id="instanceof关键字">instanceof关键字</h3><p>检验类型是否正确<br>格式：变量 instanceof 类名  返回一个boolean</p>]]></content>
-    
-    
-    <summary type="html">java基础知识</summary>
-    
-    
-    
-    <category term="java" scheme="https://xingluoxiqiao.github.io/categories/java/"/>
-    
-    
-    <category term="java" scheme="https://xingluoxiqiao.github.io/tags/java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>IO</title>
-    <link href="https://xingluoxiqiao.github.io/posts/8601bab2.html"/>
-    <id>https://xingluoxiqiao.github.io/posts/8601bab2.html</id>
-    <published>2023-08-09T10:19:03.000Z</published>
-    <updated>2023-10-23T14:00:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1>io流</h1><p>存储和读取数据的解决方案，用于读写文件中的数据（以程序为参照，程序在读取文件或网络上的数据或向文件或网络上写入）<br>可分为输入流和输出流；或者字节流和字符流（其中字节流可以是所有类型的文件，字符流只能是纯文本文件（利用windows记事本能打开并且能读懂的文件，如.txt,.md））<br><strong>使用io流的基本原则：什么时候用什么时候创建，什么时候不用什么时候关闭</strong><br><img src="/post-img/Pasted image 20230715171849.png" alt="图片损坏" style="zoom:100%;" /></p><h1>字节流</h1><p><strong>FileOutputStream和FileInputStream</strong>是字节流的两个实现类：<br>通过创建它们的对象可以实现对文件的写入和读取操作</p><h2 id="FileOutputStream写数据的三种方式">FileOutputStream写数据的三种方式</h2><img src="/post-img/Pasted image 20230715172806.png" alt="图片损坏" style="zoom:100%;" /><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//FileOutputStream写数据程序</span></span><br><span class="line"><span class="comment">//1.创建对象,在程序和文件之间形成了一条传输通道</span></span><br><span class="line"><span class="comment">//写出输出源Outputstream</span></span><br><span class="line"><span class="comment">//本地文件File</span></span><br><span class="line"><span class="type">FileoutputStream</span> <span class="variable">fos</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">FileOutputStream</span>(name:<span class="string">&quot;myio\\a.txt&quot;</span>);</span><br><span class="line"><span class="comment">//2.写出数据</span></span><br><span class="line">fos.write(<span class="number">97</span>);</span><br><span class="line"><span class="comment">//3.释放资源，摧毁传输通道</span></span><br><span class="line">fos.close();</span><br><span class="line"></span><br><span class="line">字节输出流的细节:</span><br><span class="line"><span class="number">1.</span>创建字节流输出对象</span><br><span class="line">细节<span class="number">1</span>:参数是字符串表示的路径或者是File对象都是可以的</span><br><span class="line">细节<span class="number">2</span>:如表文件不存在会创建一个新的文件，但是要保证父级路径是存在的</span><br><span class="line">细节<span class="number">3</span>：如果文件己经存在，则会清空文件；如果想要续写而非重写，需要在<span class="keyword">new</span> <span class="title class_">FileOutputStream</span>(name:<span class="string">&quot;myiolla.txt&quot;</span>)时添加第二个参数<span class="literal">true</span></span><br><span class="line"><span class="number">2.</span>写数据</span><br><span class="line">细节： werite方法的参数是整数，但是实际上写到本地文件中的是整数在ASCII上对应的字符</span><br><span class="line"><span class="number">3.</span>释放资源</span><br><span class="line">如果不释放资源，文件会被视作仍在被占用着，其他地方无法操作它</span><br></pre></td></tr></table></figure><h2 id="FileInputStream读数据的两种方式：">FileInputStream读数据的两种方式：</h2><p>注意，第二个方法一次读取一个字节数组的数据，适用于比较大的文件，<br>可以结合String的有参构造方法控制读数组中的哪几个连续数据<br><img src="/post-img/Pasted image 20230715174024.png" alt="图片损坏" style="zoom:100%;" /></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//1.创建对象</span></span><br><span class="line"><span class="type">FileInputstream</span> <span class="variable">fis</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">FileInputstream</span>( name: <span class="string">&quot;myio\\b.txt&quot;</span>);</span><br><span class="line"><span class="comment">//2.读取数据</span></span><br><span class="line"><span class="type">int</span> <span class="variable">b1</span> <span class="operator">=</span> fis.read();</span><br><span class="line">system.out.print1n((<span class="type">char</span>)b1);</span><br><span class="line"><span class="comment">//3.释放资源</span></span><br><span class="line">fis.close();</span><br><span class="line">字节输入流的细节:</span><br><span class="line"><span class="number">1.</span>创建字节输入流对象</span><br><span class="line">细节<span class="number">1</span>:如果文件不存在，就直接报错。（对比输出流文件不存在是创建）</span><br><span class="line">程序中最重要的是:数据。</span><br><span class="line"><span class="number">2.</span>写数据</span><br><span class="line">细节<span class="number">1</span>:一次读一个字节，读出来的是数据在ASCII上对应的数字</span><br><span class="line">方便阅读时需要强转为<span class="type">char</span></span><br><span class="line">细节<span class="number">2</span>:读到文件末尾了，read方法返回-<span class="number">1</span>。</span><br><span class="line"><span class="number">3.</span>释放资源</span><br><span class="line">细节:每次使用完流之后都要释放资源</span><br><span class="line"><span class="number">4.</span>循环读取时，需要有一个中间变量接取每一次读取的数据，否则会出现数据丢失</span><br></pre></td></tr></table></figure><h2 id="文件复制">文件复制</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//文件复制程序</span></span><br><span class="line"><span class="comment">//1.创建对象</span></span><br><span class="line"><span class="type">FileInputstream</span> <span class="variable">fis</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">FileInputstream</span>(<span class="string">&quot;D:\\itheima\\movie.mp4&quot;</span> );</span><br><span class="line"><span class="type">FileOutputstream</span> <span class="variable">fos</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Fileoutputstream</span>(<span class="string">&quot;myiol\copy.mp4&quot;</span>);</span><br><span class="line"><span class="comment">//2.拷贝</span></span><br><span class="line"><span class="comment">//核心思想:边读边写</span></span><br><span class="line"><span class="comment">//此处可以利用一次读取一个字节数组的数据提高效率</span></span><br><span class="line"><span class="type">int</span> b;</span><br><span class="line"><span class="keyword">while</span>((b = fis.read()) != -<span class="number">1</span>)&#123;</span><br><span class="line">fos.write(b);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//3.释放资源</span></span><br><span class="line"><span class="comment">//规则:先开的最后关闭</span></span><br><span class="line">fos.close();</span><br><span class="line">fis.close();</span><br></pre></td></tr></table></figure><h2 id="捕获异常">捕获异常</h2><p>在字节流中，无论程序中是否存在异常，最后都需要关流，因此有try-catch-finally来满足此需要，finally中包含的程序是try-catch中无论是否捕捉到异常都会执行的，因此可以把关流的语句放在此处，但是此处一处另一个问题，如果在try中创建字节流对象，那么字节流对象的作用域仅限域try所在的大括号而无法作用于finally中，因此需要将创建字节流对象的语句移动至try的上方，并且赋初值Null，否则会报错。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//1.创建对象</span></span><br><span class="line"><span class="type">FileInputstream</span> <span class="variable">fis</span> <span class="operator">=</span> <span class="literal">null</span>;</span><br><span class="line"><span class="type">Fileoutputstream</span> <span class="variable">fos</span> <span class="operator">=</span> <span class="literal">null</span>;</span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">fis = <span class="keyword">new</span> <span class="title class_">FileInputstream</span>(<span class="string">&quot;D:\\itheima\\movie.mp4&quot;</span>);</span><br><span class="line">fos = <span class="keyword">new</span> <span class="title class_">Fileoutputstream</span>(<span class="string">&quot;myio\\copy.mp4&quot;</span>);</span><br><span class="line"><span class="comment">//2.拷贝</span></span><br><span class="line"><span class="type">int</span> len;</span><br><span class="line"><span class="type">byte</span>[] bytes = <span class="keyword">new</span> <span class="title class_">byte</span>[<span class="number">1024</span> * <span class="number">1024</span> * <span class="number">5</span>];</span><br><span class="line"><span class="keyword">while</span>((len = fis.read(bytes)) != -<span class="number">1</span>)&#123;</span><br><span class="line">fos.write(bytes,off: e,len);</span><br><span class="line">&#125;</span><br><span class="line">&#125; <span class="keyword">catch</span> (IOException e)&#123;</span><br><span class="line">e.printstackTrace();</span><br><span class="line">&#125;<span class="keyword">finally</span>&#123;</span><br><span class="line"><span class="comment">//3.释放资源</span></span><br><span class="line"><span class="keyword">if</span>(fos != <span class="literal">null</span>)&#123;</span><br><span class="line"><span class="keyword">try</span>&#123;</span><br><span class="line">fos.close();</span><br><span class="line">&#125;<span class="keyword">catch</span> (IOException e)&#123;</span><br><span class="line">e.printstackTrace();</span><br><span class="line">&#125;</span><br><span class="line">&#125;<span class="keyword">if</span>(fis != <span class="literal">null</span>)&#123;</span><br><span class="line"><span class="keyword">try</span>&#123;</span><br><span class="line">fis.close();</span><br><span class="line">&#125;<span class="keyword">catch</span> (IOException e)&#123;</span><br><span class="line">e.printstackTrace();</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>后续java改进了此做法，使try后面的小括号中可以添加对象参数，但是只有实现了AutoCloseable接口的类，才能在小括号中创建对象，因为创建对象的代码可能太长，因此还可以在创建对象后直接传入。此时资源用完后会自动释放，不再需要手动释放。<br><img src="/post-img/Pasted image 20230716151715.png" alt="图片损坏" style="zoom:100%;" /></p><h1>字符流</h1><h2 id="字符集（GBK，UTF-8）">字符集（GBK，UTF-8）</h2><p>1.在计算机中，任意数据都是以二进制的形式来存储的<br>2.计算机中最小的存储单元是一个字节<br>3.ASCII字符集中，一个英文占一个字节<br>4.简体中文版windows，默认使用GBK字符集<br>5.GBK字符集完全兼容ASCI字符集<br>一个英文占一个字节，二进制第一位是0<br>一个中文占两个字节，二进制高位字节的第一位是1</p><h3 id="GBK">GBK</h3><p>计算机的存储规则(汉字)(GBK)<br>规则1:汉字两个字节存储<br>规则2:高位字节二进制一定以1开头，转成十进制之后是一个负数<br>计算机的存储规则(英文)(GBK)<br>规则:英文一个字节存储，兼容ASCI,二进制前面补0<br>因此，可以通过观察首位是0还是1来判断该字节表示的是英文还是中文</p><h3 id="UTF-8">UTF-8</h3><p>Unicode字符集的UTF-8编码格式<br>一个英文占一个字节，二进制第一位是0，转成十进制是正数<br>一个中文占三个字节，二进制第一位是1，第一个字节转成十进制是负数<br>产生乱码的原因是编码和解码所采取的编码方式不同，可以通过以下方式避免：<br>1.不要用字节流读取文本文件<br>2.编码解码时使用同一个码表，同一种编码方式</p><h3 id="java中编码的方法">java中编码的方法</h3><img src="/post-img/Pasted image 20230716154811.png" alt="图片损坏" style="zoom:100%;" /><h2 id="字符流">字符流</h2><p>字符流是在字节流的基础上加入了字符集<br>特点：<br>输入流：一次读一个字节，遇到中文时，一次读多个字节<br>输出流：底层会把数据按照指定的编码方式进行编码，变成字节再写到文件中</p><h3 id="FileReader和FileWriter">FileReader和FileWriter</h3><h4 id="FileReader">FileReader</h4><p>1.创建字符输入流对象<br>public FileReader(File file)<br>创建字符输入流关联本地文件<br>public FileReader(string pathname)<br>创建字符输入流关联本地文件<br>2.读取数据<br>public int read()<br>读取数据，读到末尾返回-1<br>public int read(char[ ] buffer)<br>读取多个数据，读到末尾返回-1<br>细节1:按字节进行读取，遇到中文，一次读多个字节，读取后解码，返回一个整数<br>细节2:读到文件末尾了，read方法返回-1。<br>3.释放资源<br>piblic viod close（）</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//1.创建对象并关联本地文件</span></span><br><span class="line"><span class="type">FileReader</span> <span class="variable">fr</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">FileReader</span>( fileName: <span class="string">&quot;myio\\a.txt&quot;</span>);</span><br><span class="line"><span class="comment">//2.读取数据 read()</span></span><br><span class="line"><span class="comment">//字符流的底层也是字节流，默认也是一个字节一个字节的读取的。</span></span><br><span class="line"><span class="comment">//如果遇到中文就会一次读取多个，GBK一次读两个字节，UTF-8一次读三个字节</span></span><br><span class="line"><span class="comment">// read()）细节:</span></span><br><span class="line"><span class="comment">//1.read():默认也是一个字节一个字节的读取的,如果遇到中文就会一次读取多个</span></span><br><span class="line"><span class="comment">//2.在读取之后，方法的底层还会进行解码并转成十进制，最终把这个十进制作为返回值</span></span><br><span class="line"><span class="comment">//想看到中文汉字，需要把这些十进制数据，再进行强转</span></span><br><span class="line"><span class="comment">//使用带参的read方法时，相当于将读取数据，解码，强转散步合并了，把强转之后的字符放到数组当中，因此它相当于空参的read加强制类型转换</span></span><br><span class="line"><span class="keyword">while</span>((ch = fr.read())!= -<span class="number">1</span>)&#123;</span><br><span class="line">system.out.print((<span class="type">char</span>)ch);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//3.释放资源</span></span><br><span class="line">fr.close();</span><br></pre></td></tr></table></figure><h4 id="FileWriter">FileWriter</h4><p>构造方法：<br><img src="/post-img/Pasted image 20230716160224.png" alt="图片损坏" style="zoom:100%;" /><br>成员方法：<br><img src="/post-img/Pasted image 20230716160254.png" alt="图片损坏" style="zoom:100%;" /><br>1.创建字符输出流对象<br>细节1∶参数是字符串表示的路径或者File对象都是可以的<br>细节2:如果文件不存在会创建一个新的文件，但是要保证父级路径是存在的<br>细节3:如果文件已经存在，则会清空文件，如果不想清空可以打开续写开关<br>2.写数据<br>细节:如果write方法的参数是整数，但是实际上写到本地文件中的是整数在字符集上对应的字符<br>3.释放资源<br>细节:每次使用完流之后都要释放资源</p><h4 id="字符流底层原理（缓冲区）">字符流底层原理（缓冲区）</h4><p>1.创建字符输入/出流对象<br>底层:关联文件，并创建缓冲区（长度为8192的字节数组）<br>2.读取数据<br>1.判断缓冲区中是否有数据可以读取<br>2.缓冲区没有数据:就从文件中获取数据，装到缓冲区中，每次尽可能装满缓冲区<br>如果文件中也没有数据了，返回-1<br>3.缓冲区有数据:从缓冲区中读取。<br>空参的read方法:一次读取一个字节，遇到中文一次读多个字节，把字节解码并转成十进制返回有参的read方法:把读取字节，解码，强转三步合并了，强转之后的字符放到数组中<br>注意：<br>FileWriter默认是不打开续写开关的，因此在读取数据后直接使用FileWriter，会清空文件<br>但是缓冲区中的数据仍然可以被读取，剩下的文件中的数据无法读取到</p><h1>高级流</h1><h2 id="字节缓冲流">字节缓冲流</h2><img src="/post-img/Pasted image 20230716161217.png" alt="图片损坏" style="zoom:100%;" /><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//1.创建缓冲流的对象</span></span><br><span class="line"><span class="type">BufferedInputStream</span> <span class="variable">bis</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">BuffenedInputStream</span>(<span class="keyword">new</span> <span class="title class_">FileInputStream</span>(<span class="string">&quot;myio\\a.txt&quot;</span>));</span><br><span class="line"><span class="type">BufferedOutputStream</span> <span class="variable">bos</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">BufferedOutputStream</span>(<span class="keyword">new</span> <span class="title class_">FileOutputStream</span>(<span class="string">&quot;myio\\copy.txt&quot;</span>);</span><br><span class="line"><span class="comment">//2.循环读取并写到目的地</span></span><br><span class="line"><span class="type">int</span> b;</span><br><span class="line"><span class="keyword">while</span> ((b = bis.read()!= -<span class="number">1</span>)&#123;</span><br><span class="line">bos.write(b);</span><br><span class="line">)</span><br><span class="line"><span class="comment">//3.释放资源</span></span><br><span class="line"><span class="comment">//只需要关闭高级流即可，java底层会自动关闭字节流</span></span><br><span class="line">bos.close();</span><br><span class="line">bis.close();</span><br></pre></td></tr></table></figure><p>字节缓冲流的最大作用就是使字节流也可以使用缓冲区，从而能够提高文件读写的效率<br>这是因为缓冲区是开辟在内存中的，而读写过程中字节流所创建的“通道”是连接硬盘和内存的<br>内存中的读写速率远快于硬盘，从而提高了效率<br>字节输入缓冲流和字节输出缓冲流都有自己的缓冲区，而第三方变量就在这两个缓冲区之间起着传递数据的作用</p><h2 id="字符缓冲流">字符缓冲流</h2><img src="/post-img/Pasted image 20230716162146.png" alt="图片损坏" style="zoom:100%;" />字符流本身自带缓冲区，因此字符缓冲流更重要的作用是提供了两个特有的方法字符缓冲输入流：public String readLine（）；读取一行数据，直到遇到回车换行结束，但是不会把回车换行读取到内存中，如果没有数据可读了，返回Null字符缓冲输出流：public void newLine（）；提供跨平台的换行<h3 id="拷贝文件的四种方式">拷贝文件的四种方式</h3><p>字节流的基本流:一次读写一个字节<br>字节流的基本流:一次读写一个字节数组<br>字节缓冲流:一次读写一个字节<br>字节缓冲流:一次读写一个字节数组<br>其中第二种和第四种方式性能较好</p><h2 id="转换流">转换流</h2><p><strong>InputStreamReader和OutputStreamWriter</strong><br>是字符流和字节流之间的桥梁<br><img src="/post-img/Pasted image 20230716163227.png" alt="图片损坏" style="zoom:100%;" /><br>作用：<br>1.按照指定字符编码读取<br>JDK11前：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">InputStreamReader</span> <span class="variable">isr</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">InputStreamReader</span>(<span class="keyword">new</span> <span class="title class_">FileInputStream</span>(<span class="string">&quot;myio\\gbkfile.txt&quot;</span>),<span class="string">&quot;GBK&quot;</span>);</span><br></pre></td></tr></table></figure><p>JDK11后：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">FileReader</span> <span class="variable">fr</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">FileReader</span>(<span class="string">&quot;myio\\gbkfilg,txt&quot;</span> , charset.forName(<span class="string">&quot;GBK&quot;</span>));</span><br></pre></td></tr></table></figure><p>2.字节流想要使用字符流中的方法（缓冲流中的readLine和newLine）<br>字节流在读取中文的时候，是会出现乱码的，但是字符流可以搞定；<br>字节流里面是没有读一整行的方法的。只有字符缓冲流才能搞定</p><h2 id="序列化流和反序列化流">序列化流和反序列化流</h2><p><strong>序列化流</strong>ObjectOutputStream可以将一个对象写到本地文件中<br>构造方法：public ObjectOutputStream （OutputStream out）<br>成员方法：public final void writeObject（Object obj）将对象序列化写出到文件中，防止被修改<br><strong>反序列化流</strong>ObjectInputStream可以将序列化到本地文件中的对象读取到程序中<br>构造方法：public ObjectInputStream （InputStream out）<br>成员方法：public Object readObject（）把序列化到本地文件中的对象读取到程序中<br>注意：<br>1.要使用序列化流，对象的javabean类必须实现Serilizable接口，这是一个标记式接口，其中不含抽象方法，否则会出现NotSerialzableException异常<br>2.使用序列化流时，java会通过成员变量等信息计算得到一个版本号，将它和对象信息一起写入文件中，如果后续jacabean类发生修改使得版本号发生改变，导致读取时版本号与javabean中版本号不一致，会发生报错，因此需要固定版本号<br>private static final long serialVersionUID=1L;<br>3.如果有不想序列化到文件中的成员变量，可以使用transient关键字，称为瞬态关键字：<br>private transient String address ；<br>4.序列化流写到文件中的数据是不能修改的，一但修改就无法再次读回来了<br>5.将多个自定义对象序列化到文件中，但是对象的个数不确定时，可以将对象添加到ArrayList中，用反序列化流读取ArrayList中的数据再强转为ArrayList，最后再循环获取，这样做的原因是ArrayList也实现了Serilizable接口（可以从ArrayList的源码中获取serialVersionUID）</p><h2 id="打印流">打印流</h2><p><strong>PrintStream和Printwriter</strong><br>特点1:打印流只操作文件目的地，不操作数据源<br>特点2:<strong>特有的写出方法</strong>可以实现，数据原样写出<br>特点3:<strong>特有的写出方法</strong>可以实现自动刷新，自动换行<br>打印一次数据=写出＋换行＋刷新</p><h3 id="字节打印流">字节打印流</h3><p>字节打印流没有缓冲器，开不开自动刷新都一样<br>构造方法：<br><img src="/post-img/Pasted image 20230716170941.png" alt="图片损坏" style="zoom:100%;" /><br>成员方法：<br><img src="/post-img/Pasted image 20230716171047.png" alt="图片损坏" style="zoom:100%;" /></p><h3 id="字符打印流">字符打印流</h3><p>字符流有缓冲区，想要自动刷新需要开启<br>构造方法：<br><img src="/post-img/Pasted image 20230716171307.png" alt="图片损坏" style="zoom:100%;" /><br>成员方法：<br><img src="/post-img/Pasted image 20230716171336.png" alt="图片损坏" style="zoom:100%;" /><br>输出语句System.out.println() 再理解<br>System.out其实就是获取了一个打印流对象，此打印流在虚拟机启动的时候，由虚拟机创建，默认指向控制台，它是一个特殊的打印流，是系统中的标准输出流，不能关闭，否则后面的输出语句都没用了，在系统中是唯一的</p><h2 id="解压缩流和压缩流">解压缩流和压缩流</h2><p><strong>ZipInputStream和ZipOutputStream</strong><br>压缩包中的每一个文件(包括文件夹中的文件)可视作一个ZipEntry，解压的本质就是将每一个ZipEntry按照层级拷贝到本地另一个文件夹中</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//定义一个方法用来解压</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">unzip</span><span class="params">(File src,File dest)</span> <span class="keyword">throws</span> IOException &#123;</span><br><span class="line"></span><br><span class="line"><span class="comment">//创建一个解压缩流用来读取压缩包中的数据</span></span><br><span class="line"><span class="type">zipInputStream</span> <span class="variable">zip</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">zipInputstream</span>(<span class="keyword">new</span> <span class="title class_">FileInputstream</span>(src));</span><br><span class="line"><span class="comment">//要先获取到压缩包里面的每一个zipentry对象</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//表示当前在压缩包中获取到的文件或者文件夹</span></span><br><span class="line">ZipEntry entry;</span><br><span class="line"><span class="keyword">while</span>(entry = zip.getNextEntry() != <span class="literal">null</span>)&#123;</span><br><span class="line">System.out.println(entry);</span><br><span class="line"><span class="keyword">if</span>(entry.isDirectory())&#123;</span><br><span class="line"><span class="comment">//文件夹:需要在目的地dest处创建一个同样的文件夹</span></span><br><span class="line"><span class="type">File</span> <span class="variable">file</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">File</span>(dest,entry.toStringO);</span><br><span class="line">file.mkdirs();</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line"><span class="comment">//文件:需要读取到压缩包中的文件，并把他存放到目的地dest文件夹中（按照层级目录进行存放)</span></span><br><span class="line"><span class="type">Fileoutputstream</span> <span class="variable">fos</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">FileoutputStream</span>(<span class="keyword">new</span> <span class="title class_">File</span>(dest,entry.toString()));</span><br><span class="line"><span class="type">int</span> b;</span><br><span class="line"><span class="keyword">while</span>(b = zip.read() != -<span class="number">1</span>)&#123;</span><br><span class="line"><span class="comment">//写到目的地</span></span><br><span class="line">fos.write(b);</span><br><span class="line">&#125;</span><br><span class="line">fos.close();</span><br><span class="line"><span class="comment">//表示在压缩包中的一个文件处理完毕了</span></span><br><span class="line">zip.closeEntry();</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">zip.close();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//作用:压缩</span></span><br><span class="line"><span class="comment">//参数一:表示要压缩的文件</span></span><br><span class="line"><span class="comment">//参数二:表示压缩包的位置</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">toZip</span><span class="params">(File src,File dest)</span> <span class="keyword">throws</span> IOException &#123;</span><br><span class="line"><span class="comment">//1.创建压缩流关联压缩包</span></span><br><span class="line"><span class="type">ZipOutputStream</span> <span class="variable">zos</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ZipOutputStream</span>(<span class="keyword">new</span> <span class="title class_">FileOutputStream</span>(<span class="keyword">new</span> <span class="title class_">File</span>(dest,<span class="string">&quot;a.zip&quot;</span>)));</span><br><span class="line"><span class="comment">//2.创建ZipEntry对象,表示压缩包里面的每一个文件和文件夹</span></span><br><span class="line"><span class="type">zipEntry</span> <span class="variable">entry</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">zipEntry</span>(<span class="string">&quot;a.txt&quot;</span>);</span><br><span class="line"><span class="comment">//3.把ZipEntry对象放到压缩包当中</span></span><br><span class="line">zos.putNextEntry(entry);</span><br><span class="line"><span class="comment">//4.把src文件中的数据写到压缩包当中</span></span><br><span class="line"><span class="type">FileInputStream</span> <span class="variable">fis</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">FileInputStream</span>(src);</span><br><span class="line"><span class="type">int</span> b;</span><br><span class="line"><span class="keyword">while</span>((b= fis.read()) != -<span class="number">1</span>)&#123;</span><br><span class="line">zos.write(b);</span><br><span class="line">&#125;</span><br><span class="line">zos.closeEntry();</span><br><span class="line">zos.close();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="常用工具包">常用工具包</h2><h3 id="Commons-io">Commons-io</h3><p><a href="https://www.bilibili.com/video/BV1yW4y1Y7Ms?p=116&amp;vd_source=ed6c39835b03d1fda588ce43bc8a16e6">IO流-43-常用工具包（Commons-io）_哔哩哔哩_bilibili</a></p><h3 id="Hutool">Hutool</h3><p><a href="https://www.bilibili.com/video/BV1yW4y1Y7Ms?p=117&amp;vd_source=ed6c39835b03d1fda588ce43bc8a16e6">IO流-44-常用工具包（hutool）_哔哩哔哩_bilibili</a></p>]]></content>
-    
-    
-    <summary type="html">java基础知识</summary>
-    
-    
-    
-    <category term="java" scheme="https://xingluoxiqiao.github.io/categories/java/"/>
-    
-    
-    <category term="java" scheme="https://xingluoxiqiao.github.io/tags/java/"/>
+    <category term="java" scheme="https://xlxq.fun/tags/java/"/>
     
   </entry>
   

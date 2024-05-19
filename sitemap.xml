@@ -155,7 +155,7 @@
   </url>
   
   <url>
-    <loc>https://xlxq.fun/life/music/index.html</loc>
+    <loc>https://xlxq.fun/life/movies/index.html</loc>
     
     <lastmod>2024-01-24</lastmod>
     
@@ -164,7 +164,7 @@
   </url>
   
   <url>
-    <loc>https://xlxq.fun/life/movies/index.html</loc>
+    <loc>https://xlxq.fun/life/music/index.html</loc>
     
     <lastmod>2024-01-24</lastmod>
     
@@ -326,7 +326,7 @@
   </url>
   
   <url>
-    <loc>https://xlxq.fun/posts/f45a2f4a.html</loc>
+    <loc>https://xlxq.fun/posts/adcb768c.html</loc>
     
     <lastmod>2023-10-23</lastmod>
     
@@ -335,7 +335,7 @@
   </url>
   
   <url>
-    <loc>https://xlxq.fun/posts/adcb768c.html</loc>
+    <loc>https://xlxq.fun/posts/f45a2f4a.html</loc>
     
     <lastmod>2023-10-23</lastmod>
     
@@ -380,15 +380,6 @@
   </url>
   
   <url>
-    <loc>https://xlxq.fun/posts/8c5e4b35.html</loc>
-    
-    <lastmod>2023-10-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://xlxq.fun/posts/92ac8f89.html</loc>
     
     <lastmod>2023-10-12</lastmod>
@@ -398,7 +389,7 @@
   </url>
   
   <url>
-    <loc>https://xlxq.fun/posts/841393be.html</loc>
+    <loc>https://xlxq.fun/posts/8c5e4b35.html</loc>
     
     <lastmod>2023-10-12</lastmod>
     
@@ -408,6 +399,15 @@
   
   <url>
     <loc>https://xlxq.fun/posts/bef137fa.html</loc>
+    
+    <lastmod>2023-10-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://xlxq.fun/posts/841393be.html</loc>
     
     <lastmod>2023-10-12</lastmod>
     
@@ -587,13 +587,6 @@
 
   
   <url>
-    <loc>https://xlxq.fun/tags/mysql/</loc>
-    <lastmod>2024-05-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://xlxq.fun/tags/java/</loc>
     <lastmod>2024-05-19</lastmod>
     <changefreq>weekly</changefreq>
@@ -602,6 +595,13 @@
   
   <url>
     <loc>https://xlxq.fun/tags/JVM/</loc>
+    <lastmod>2024-05-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://xlxq.fun/tags/mysql/</loc>
     <lastmod>2024-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -629,6 +629,13 @@
   </url>
   
   <url>
+    <loc>https://xlxq.fun/tags/%E5%8F%AF%E8%A7%82%E6%B5%8B/</loc>
+    <lastmod>2024-05-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://xlxq.fun/tags/git/</loc>
     <lastmod>2024-05-19</lastmod>
     <changefreq>weekly</changefreq>
@@ -643,14 +650,14 @@
   </url>
   
   <url>
-    <loc>https://xlxq.fun/tags/%E5%8F%AF%E8%A7%82%E6%B5%8B/</loc>
+    <loc>https://xlxq.fun/tags/maven/</loc>
     <lastmod>2024-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://xlxq.fun/tags/maven/</loc>
+    <loc>https://xlxq.fun/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
     <lastmod>2024-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -671,7 +678,7 @@
   </url>
   
   <url>
-    <loc>https://xlxq.fun/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
+    <loc>https://xlxq.fun/tags/%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/</loc>
     <lastmod>2024-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -691,17 +698,10 @@
     <priority>0.2</priority>
   </url>
   
-  <url>
-    <loc>https://xlxq.fun/tags/%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/</loc>
-    <lastmod>2024-05-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
   
   <url>
-    <loc>https://xlxq.fun/categories/mysql/</loc>
+    <loc>https://xlxq.fun/categories/JVM/</loc>
     <lastmod>2024-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -715,7 +715,7 @@
   </url>
   
   <url>
-    <loc>https://xlxq.fun/categories/JVM/</loc>
+    <loc>https://xlxq.fun/categories/mysql/</loc>
     <lastmod>2024-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -736,6 +736,13 @@
   </url>
   
   <url>
+    <loc>https://xlxq.fun/categories/%E5%8F%AF%E8%A7%82%E6%B5%8B/</loc>
+    <lastmod>2024-05-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://xlxq.fun/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2024-05-19</lastmod>
     <changefreq>weekly</changefreq>
@@ -743,7 +750,7 @@
   </url>
   
   <url>
-    <loc>https://xlxq.fun/categories/%E5%8F%AF%E8%A7%82%E6%B5%8B/</loc>
+    <loc>https://xlxq.fun/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
     <lastmod>2024-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -757,7 +764,7 @@
   </url>
   
   <url>
-    <loc>https://xlxq.fun/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
+    <loc>https://xlxq.fun/categories/%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/</loc>
     <lastmod>2024-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -772,13 +779,6 @@
   
   <url>
     <loc>https://xlxq.fun/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/</loc>
-    <lastmod>2024-05-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://xlxq.fun/categories/%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/</loc>
     <lastmod>2024-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
